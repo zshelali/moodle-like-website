@@ -1,0 +1,17 @@
+#summary-container {
+  justify-content: center;
+  align-items: center;
+  width: 200px;
+  margin: 0 auto;
+}
+
+#summary-title {
+  width: 400px;
+  text-align: center;
+  font-size: large;
+}
+
+#summary-desc {
+  width: 400px;
+  text-align: center;
+}

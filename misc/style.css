@@ -1,0 +1,78 @@
+* {
+  margin: 0;
+}
+
+body {
+  font-family: Helvetica, Arial, sans-serif;
+  color: #7d7373;
+}
+
+h1,
+h2,
+h3 {
+  font-weight: normal;
+}
+
+a {
+  text-decoration: none; /* remove underline */
+  color: inherit; /* use of default color */
+  transition: color 0.3s ease;
+}
+
+a:hover {
+  color: #cb3631;
+}
+
+nav {
+  display: grid;
+  grid-template-columns: 70px auto;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  justify-self: end;
+  margin-right: 5px;
+}
+
+.title-container {
+  display: grid;
+  grid-template-columns: 100px auto;
+  background-color: #f3f2f2;
+  height: 80px;
+  padding-top: 20px;
+  overflow: visible;
+  border-radius: 7px;
+}
+
+.buttonlink {
+  background-color: #f3f3f3;
+  border-radius: 7px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 5px 10px;
+  text-decoration: underline;
+}
+
+#maintitle {
+  font-size: 50px;
+  align-self: start;
+  margin: 30px;
+}
+
+#dotcom {
+  font-size: 12px;
+}
+
+#utbmlogo {
+  text-align: end;
+  margin-top: 60px;
+  font-size: 16px;
+  margin-right: 5px;
+  color: #999999;
+}
+
+#contact-info {
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+}
