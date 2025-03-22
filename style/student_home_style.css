@@ -33,11 +33,22 @@
     transform: translateY(-5px);
     box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
     background-color: #fff;
+    cursor: pointer;
 }
 
 .ueBox h4 {
   align-self: flex-start;
   margin: 0;
   font-size: 18px;
-  margin-bottom: 2vh;
+}
+
+.ueBox img {
+    max-width: 90%;
+    max-height: 90%;
+    width: auto;
+    height: auto;
+    object-fit: scale-down;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+    align-self: center;
 }
