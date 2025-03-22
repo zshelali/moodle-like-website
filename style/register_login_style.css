@@ -1,11 +1,14 @@
-h3 {
-  text-align: center;
-  margin: 0 auto;
+.subtitle {
+  margin: 50px;
+}
+
+.form-container {
+  margin-top: -12vh;
 }
 
 .reg-log-form {
   margin: 0 auto;
-  margin-top: 5vh;
+  margin-top: 1vh;
   width: 35%;
   padding: 1em;
   border: 3px solid #ffffff;
@@ -44,13 +47,10 @@ textarea {
 #submit-reg {
   font-family: inherit;
   color: inherit;
+  margin-left: 13vw;
 }
 
 #submit-reg:hover {
   color: white;
 }
 
-#loginCaptcha {
-  margin-left: 5vw;
-  margin-top: 1vh;
-}

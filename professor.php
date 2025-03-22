@@ -16,5 +16,7 @@ include("PageParts/header.php");
         hasard, désormais mariée à un riche homme d'affaires (Taïeb). 
     </p>
     <a class="buttonlink startnow" href="./register.php">Start Now</a>
+    <a class="buttonlink" href="./login.php">I already have an account</a>
+
 </div>
 
