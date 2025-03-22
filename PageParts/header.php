@@ -23,12 +23,6 @@
       echo '<script src="script/' . $script . '.js"></script>' . "\n";
     }
   }
-
-  // back button
-$currentPage = basename($_SERVER['PHP_SELF']);
-if ($currentPage !== 'index.php') {
-  echo '<a href="javascript:history.back()" class="back-button">← Back</a>';
-}
   ?>
 
   <!-- <link rel="stylesheet" href="style/professor_page_style.css" /> 

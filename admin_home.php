@@ -22,4 +22,8 @@ include("PageParts/header.php");
     </div>
 </div>
 
+<?php 
+include("PageParts/footer.php");
+?>
+
 <!--BODY END-->

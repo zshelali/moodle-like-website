@@ -1,3 +1,11 @@
+<?php 
+// back
+$currentPage = basename($_SERVER['PHP_SELF']);
+if ($currentPage !== 'index.php') {
+  echo '<a href="javascript:history.back()" class="buttonlink back-button">← Back</a>';
+}
+?>
+
 </body>
 
 <footer>

@@ -80,4 +80,8 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
 </div>
 
+<?php 
+include("PageParts/footer.php");
+?>
+
 <!--BODY END-->

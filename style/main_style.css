@@ -103,3 +103,10 @@ nav {
   width: fit-content;
   font-size: 30px;
 }
+
+.back-button {
+  width: 80px;
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+}

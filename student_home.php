@@ -54,3 +54,7 @@ include("PageParts/header.php");
 </div>
 
 <!--BODY END-->
+
+<?php 
+include("PageParts/footer.php");
+?>
