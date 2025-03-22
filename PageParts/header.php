@@ -42,7 +42,7 @@
   <nav id="reg-log-nav">
     <a href="register.php" class="buttonlink">Register</a>
     <a href="login.php" class="buttonlink">Login</a>
-    <a href="admin_login.php" class="buttonlink">Admin access</a>
+    <a href="admin_login.php" class="buttonlink">Admin zone</a>
   </nav>
   <br />
 

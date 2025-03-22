@@ -1,0 +1,46 @@
+.ueGrid {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+}
+    
+.ueGridBox1 { grid-area: 2 / 2 / 3 / 3; }
+.ueGridBox2 { grid-area: 2 / 3 / 3 / 4; }
+.ueGridBox3 { grid-area: 2 / 4 / 3 / 5; }
+.ueGridBox4 { grid-area: 3 / 2 / 4 / 3; }
+.ueGridBox5 { grid-area: 3 / 3 / 4 / 4; }
+.ueGridBox6 { grid-area: 3 / 4 / 4 / 5; }
+
+.ueBox {
+    border: 2px solid #ccc;
+    width: 30vh;
+    height: 30vh;
+    padding: 10%;
+    border-radius: 12px;
+    background-color: #f9f9f9;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    justify-content: center;
+    text-align: center;
+    font-family: Arial, sans-serif;
+    gap: 10px;
+    padding-top: 20px;
+}
+
+.ueBox:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+    background-color: #fff;
+}
+
+.ueBox h4 {
+  align-self: flex-start;
+  margin: 0;
+  font-size: 18px;
+  margin-bottom: 10vh;
+}
