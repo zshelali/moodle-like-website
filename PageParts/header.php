@@ -7,6 +7,7 @@
 
   <!--Common style to all pages (header, footer...) -->
   <link rel="stylesheet" href="style/main_style.css" />
+  <script src="https://www.google.com/recaptcha/api.js" async defer></script>
   <?php
   if (isset($styles) && is_array($styles)) {
     foreach ($styles as $style) {
