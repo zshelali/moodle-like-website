@@ -7,12 +7,18 @@
 
   <!--Common style to all pages (header, footer...) -->
   <link rel="stylesheet" href="style/main_style.css" />
-  
+
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
   <?php
   if (isset($styles) && is_array($styles)) {
     foreach ($styles as $style) {
       echo '<link rel="stylesheet" href="style/' . $style . '.css" />' . "\n";
+    }
+  }
+
+  if (isset($scripts) && is_array($scripts)) {
+    foreach ($scripts as $script) {
+      echo '<script src="script/' . $script . '.js"></script>' . "\n";
     }
   }
   ?>
@@ -36,6 +42,7 @@
   <nav id="reg-log-nav">
     <a href="register.php" class="buttonlink">Register</a>
     <a href="login.php" class="buttonlink">Login</a>
+    <a href="admin_login.php" class="buttonlink">Admin access</a>
   </nav>
   <br />
 

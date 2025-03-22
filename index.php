@@ -13,7 +13,7 @@ include("PageParts/header.php");
         <br />
         <p class="description"> <!-- à changer -->
           Interact with your students, grade their work and keep track of their
-          evolution in an interactive way to keep your students interested
+          evolution in an interactive way to keep your students interested.
         </p>
       </div>
       <div class="button-desc">
@@ -21,7 +21,7 @@ include("PageParts/header.php");
         <br />
         <p class="description"> <!-- à changer -->
           Check your grades, upload your work and projects, interact with your
-          mates and get many rewards as you progress 
+          mates and get many rewards as you progress. 
         </p>
       </div>
     </div>

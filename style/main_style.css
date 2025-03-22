@@ -19,6 +19,11 @@ a {
   transition: color 0.3s ease;
 }
 
+.buttonlink {
+  color: #7d7373;
+  border: none;
+}
+
 .buttonlink:hover {
   background-color: #d5302a;
   color: white;
