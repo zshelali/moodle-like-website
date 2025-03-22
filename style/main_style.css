@@ -107,6 +107,6 @@ nav {
 .back-button {
   width: 80px;
   position: absolute;
-  bottom: 20px;
+  top:120px;
   left: 20px;
 }

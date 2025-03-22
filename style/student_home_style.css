@@ -1,10 +1,9 @@
 .ueGrid {
     display: grid;
     grid-template-columns: repeat(5, 1fr);
-    grid-template-rows: repeat(5, 1fr);
+    grid-template-rows: auto auto;
     grid-column-gap: 60px;
     grid-row-gap: 10px;
-    margin-top: -12vh;
 }
     
 .ueGridBox1 { grid-area: 1 / 2 / 2 / 3; }

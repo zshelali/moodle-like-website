@@ -4,7 +4,6 @@ include("PageParts/header.php");
 ?>
 
 <!--BODY-->
-<h3 class="subtitle">Welcome back, kiddo.</h3>
 <div class="ueGrid">
 
     <div class="ueGridBox1 ueBox">
