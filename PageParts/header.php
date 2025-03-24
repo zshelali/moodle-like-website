@@ -46,7 +46,7 @@
     </h1>
     <div class="logo-container">
         <a href="https://utbm.fr">
-            <img src="https://upload.wikimedia.org/wikipedia/fr/b/be/Utbm.svg" alt="logo" id="logo">
+            <img src="https://upload.wikimedia.org/wikipedia/fr/b/be/Utbm.svg" alt="logo" id="utbm-logo">
         </a>
     </div>
 </div>

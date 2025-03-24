@@ -85,6 +85,10 @@ textarea {
   color: white;
 }
 
+#ue-code, #ue-name, #ue-description {
+  color: #231F1F;
+}
+
 #ue-code {
   width: 50%;
 }

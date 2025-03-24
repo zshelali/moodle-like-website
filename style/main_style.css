@@ -18,17 +18,7 @@ a {
   color: #D42D26; /* use of default color */
   transition: color 0.3s ease;
 }
-#logo {
-  display: block;
-  width: 100px;
-}
 
-.logo-container {
-  display: flex;
-  justify-content: right;
-  width: 100%;
-  margin-right: 20px;
-}
 .buttonlink {
   color: #423E3E;
   border: none;
@@ -72,8 +62,13 @@ nav {
   justify-content: center;
   align-items: center;
   padding: 5px 10px;
-  transition: background-color 0.3s ease, color 0.3s ease;
+  transition: background-color 0.2s ease, color 0.2s ease;
   cursor: pointer;
+}
+
+.link-hover {
+  color: #423E3E;
+  transition: color 0.2s ease;
 }
 
 .link-hover:hover {
@@ -92,14 +87,19 @@ nav {
   position: absolute;
   left: 20px;
   transform: translateY(-50%);
-  color: #423E3E;
+
 }
 
-#utbmlogo {
+#utbm-logo {
   position: absolute;
-  top: 80px;
-  font-size: 16px;
-  right: 5px;
+  top: 40px;
+  right: 10px;
+  width: 100px;
+  transition: transform 0.2s ease;
+}
+
+#utbm-logo:hover {
+  transform: scale(1.1); /* slightly bigger */
 }
 
 #contact-info {
