@@ -15,10 +15,20 @@ h3 {
 
 a {
   text-decoration: none; /* remove underline */
-  color: inherit; /* use of default color */
+  color: #a65709; /* use of default color */
   transition: color 0.3s ease;
 }
+#logo {
+  display: block;
+  width: 100px;
+}
 
+.logo-container {
+  display: flex;
+  justify-content: right;
+  width: 100%;
+  margin-right: 20px;
+}
 .buttonlink {
   color: #7d7373;
   border: none;
