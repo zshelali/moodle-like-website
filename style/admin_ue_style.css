@@ -29,6 +29,10 @@
   cursor: pointer;
 }
 
+.close:hover {
+  color: #D42D26;
+}
+
 .subtitle {
   margin: 50px;
 }
@@ -96,6 +100,13 @@ textarea {
 
 #modal-submit {
     margin-left: 100px;
+    color: #423E3E;
+    background-color: #D6D6D6;
+}
+
+#modal-submit:hover {
+  background-color: #d5302a;
+  color: white;
 }
 
 #modal-title {

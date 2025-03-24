@@ -4,7 +4,7 @@
 
 body {
   font-family: Helvetica, Arial, sans-serif;
-  color: #7d7373;
+  color: #423E3E;
 }
 
 h1,
@@ -15,7 +15,7 @@ h3 {
 
 a {
   text-decoration: none; /* remove underline */
-  color: #a65709; /* use of default color */
+  color: #D42D26; /* use of default color */
   transition: color 0.3s ease;
 }
 #logo {
@@ -30,7 +30,7 @@ a {
   margin-right: 20px;
 }
 .buttonlink {
-  color: #7d7373;
+  color: #423E3E;
   border: none;
 }
 
@@ -92,6 +92,7 @@ nav {
   position: absolute;
   left: 20px;
   transform: translateY(-50%);
+  color: #423E3E;
 }
 
 #utbmlogo {
