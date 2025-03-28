@@ -4,7 +4,7 @@ include("PageParts/header.php");
 ?>
 
 <div class="form-container">
-<h3 class="subtitle">Log in</h3>
+<h3 class="subtitle">Welcome back</h3>
     <form class="reg-log-form" action="?" method="POST"> <!-- action="x.php" method="POST" -->
 
         <label>Email :</label>
@@ -13,7 +13,7 @@ include("PageParts/header.php");
         <label>Password :</label>
         <input type="password" required />
 
-        <button type="submit" class="startnow buttonlink" class="submit-reg">Sign up</button>
+        <button type="submit" class="buttonlink submit-reg">Log in</button>
     </form>
 </div>
 

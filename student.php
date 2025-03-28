@@ -18,7 +18,6 @@ include("PageParts/header.php");
         Chekib et Wassim.
     </p>
     <a class="buttonlink startnow" href="./register.php">Start Now</a>
-    <a class="buttonlink" href="./login.php">I already have an account</a>
 
 </div>
 

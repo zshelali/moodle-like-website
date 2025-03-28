@@ -9,14 +9,17 @@
 .reg-log-form {
   margin: 0 auto;
   margin-top: 1vh;
-  width: 35%;
   padding: 1em;
-  border: 3px solid #ffffff;
-  border-radius: 40px;
-  box-shadow: 0 0 5px #7d7373;
+  border-radius: 20px;
+  width: 35%;
+  transition: background-color 0.2s ease, color 0.2s ease;
   text-align: center;
-  background-color: #f3f2f212;
-  color: #7d7373;
+  backdrop-filter: blur(10px) saturate(120%);
+  -webkit-backdrop-filter: blur(10px) saturate(120%);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  box-shadow:
+      0 4px 6px rgba(0, 0, 0, 0.05),
+      0 1px 3px rgba(0, 0, 0, 0.1);
 }
 
 /*modifier les titres*/
@@ -30,27 +33,36 @@ label {
 }
 
 /*modifier les zones de texte */
+
 input,
 textarea {
-  width: 45%;
-  box-sizing: border-box;
-  padding: 12px;
-  border: 2px solid #cccccc;
-  border-radius: 8px;
-  font-size: 16px;
-  background-color: #ffffff;
-  color: #333333;
-  transition: border-color 0.4s ease, box-shadow 0,4s ease;
-  margin-bottom: 12px;
+  font-family: Helvetica, Arial, sans-serif;
+    width: 45%;
+    box-sizing: border-box;
+    padding: 12px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 12px;
+    font-size: 16px;
+    background-color: #f3f3f3;
+    cursor: text;
+    backdrop-filter: blur(10px) saturate(120%);
+    -webkit-backdrop-filter: blur(10px) saturate(120%);
+    box-shadow:
+        inset 0 4px 6px rgba(0, 0, 0, 0.05),
+        inset 0 1px 3px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.2s ease, box-shadow 0.2s ease;
+    margin-bottom: 12px;
 }
 
-#submit-reg {
-  font-family: inherit;
-  color: inherit;
-  margin-left: 13vw;
+input:focus,
+textarea:focus {
+    background-color: #e6e6e6;
+    box-shadow:
+        inset 0 2px 4px rgba(0, 0, 0, 0.05),
+        inset 0 1px 2px rgba(0, 0, 0, 0.1);
 }
 
-#submit-reg:hover {
-  color: white;
+.submit-reg {
+  margin-top: 3vh;
+  font-size: 25px;
 }
-

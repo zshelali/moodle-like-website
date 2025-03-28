@@ -1,5 +1,6 @@
 * {
   margin: 0;
+  outline-style: none;
 }
 
 body {
@@ -37,11 +38,17 @@ nav {
 .title-container {
   display: flex;
   align-items: center;
-  background-color: #f3f2f2;
+  background: #f3f2f2;
   height: 80px;
   padding-top: 20px;
   overflow: visible;
   border-radius: 7px;
+  backdrop-filter: blur(40px) saturate(180%);
+  -webkit-backdrop-filter: blur(40px) saturate(180%);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  box-shadow: 
+    0 4px 6px rgba(0, 0, 0, 0.05),
+    0 1px 3px rgba(0, 0, 0, 0.1);
 }
 .dotcom {
   font-size: 12px;
@@ -116,8 +123,8 @@ nav {
 
 .startnow {
   margin: 50px auto;
-  margin-left: 160px;
-  width: fit-content;
+  margin-left: 80px;
+  width: 200px;
   font-size: 30px;
 }
 
