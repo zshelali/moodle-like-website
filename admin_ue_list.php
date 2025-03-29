@@ -9,9 +9,9 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     $name = $_POST['ue_name'];
     $desc = $_POST['ue_description'];
 
-    // TODO: Save the changes to a database or file here
+    //TODO: Save the changes to a database or file here
 
-    // Redirect to avoid resubmission on reload
+    //Redirect to avoid resubmission on reload
     header("Location: admin_ue_list.php");
     exit();
 }
