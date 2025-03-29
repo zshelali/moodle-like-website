@@ -3,9 +3,11 @@
   outline-style: none;
 }
 
+
 body {
   font-family: Helvetica, Arial, sans-serif;
   color: #423E3E;
+  flex: 1;
 }
 
 h1,
@@ -115,12 +117,6 @@ nav {
   transform: scale(1.1); /* slightly bigger */
 }
 
-#contact-info {
-  position: absolute;
-  bottom: 20px;
-  right: 20px;
-}
-
 .startnow {
   margin: 50px auto;
   margin-left: 80px;
@@ -133,4 +129,11 @@ nav {
   position: absolute;
   top:120px;
   left: 20px;
+}
+
+footer {
+  font-size: x-small;
+  text-align: center;
+  display: none;
+
 }
