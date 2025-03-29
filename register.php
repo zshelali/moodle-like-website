@@ -26,7 +26,7 @@ include("PageParts/header.php");
         <label>Phone number :</label>
         <input type="tel" />
 
-        <button type="submit" class="startnow buttonlink" id="submit-reg">Sign up</button>
+        <button type="submit" class="buttonlink submit-reg">Sign up</button>
     </form>
 </div>
 
