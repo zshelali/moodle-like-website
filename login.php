@@ -4,7 +4,7 @@ include("PageParts/header.php");
 ?>
 
 <div class="form-container">
-<h3 class="subtitle">Log in</h3>
+<h3 class="subtitle">Welcome back.</h3>
     <form class="reg-log-form" action="?" method="POST"> <!-- action="x.php" method="POST" -->
 
         <label>Email :</label>
