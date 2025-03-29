@@ -58,7 +58,12 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     </table>
 
     <!-- Modal -->
-    <div id="editModal" class="modal">
+   
+
+
+</div>
+
+<div id="editModal" class="modal">
         <div class="modal-content">
             <span class="close">&times;</span>
             <h3 id="modal-title">UE settings</h3>
@@ -76,9 +81,6 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
             </div>
         </div>
     </div>
-
-
-</div>
 
 <?php 
 include("PageParts/footer.php");
