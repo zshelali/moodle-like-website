@@ -1,26 +1,44 @@
 <?php
-$styles = ['professor_page_style'];
+$styles = ['student_home_style'];
 include("PageParts/header.php");
 ?>
 
-<h3 class="subtitle">Yo bro !</h3>
-<div id="summary-container">
+<!--BODY-->
+<div class="ueGrid">
 
-    <p id="summary-title">Here's a quick summary of what you can do as a <em>student</em> on Skooli<span class="dotcom">.com</span></p>
-    <br />
-    <p id="summary-desc">
-        Zeineb, la femme de Slimane, possède sa propre
-        boutique puis son centre et enfin sa pâtisserie. Elle est constamment
-        jalouse de Azza et de Dalenda (Daddou),
-        la secrétaire de Slimane
-        à partir du troisième épisode de la deuxième saison. Dans la série,
-        Daddou est sortie avec deux personnages,
-        Chekib et Wassim.
-    </p>
-    <a class="buttonlink startnow" href="./register.php">Start Now</a>
+    <div class="ueGridBox1 ueBox">
+        <h4>IT41</h4>
+        <img src="images/it41_gpt.png">
+    </div>
 
+    <div class="ueGridBox2 ueBox">
+        <h4>IT44</h4>
+        <img src="images/it44_gpt.png">
+    </div>
+
+    <div class="ueGridBox3 ueBox">
+        <h4>WE4A</h4>
+        <img src="images/WE4A_gpt.png">
+    </div>
+
+    <div class="ueGridBox4 ueBox">
+        <h4>LC00</h4>
+        <img src="images/lc00_gpt.png">
+    </div>
+
+    <div class="ueGridBox5 ueBox">
+        <h4>SO04</h4>
+        <img src="images/so04_gpt.png">
+    </div>
+
+    <div class="ueGridBox6 ueBox">
+        <h4>SI40</h4>
+        <img src="images/it41_gpt.png">
+    </div>
 </div>
 
-<?php 
+<!--BODY END-->
+
+<?php
 include("PageParts/footer.php");
 ?>
