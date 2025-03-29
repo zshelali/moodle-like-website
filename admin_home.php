@@ -4,7 +4,7 @@ include("PageParts/header.php");
 ?>
 
 <!--BODY-->
-<h3 class="subtitle">Welcome back, admin.</h3>
+<h3 class="subtitle">Hey, admin.</h3>
 <div class="button-container">
     <div class="button-desc">
         <a href="admin_ue_list.php" class="buttonlink prof-stud-button">UE</a>
