@@ -8,10 +8,10 @@ include("PageParts/header.php");
 <div class="form-container">
 <h3 class="subtitle">Create your account</h3>
     <form class="reg-log-form" action="?" method="POST"> <!-- action="x.php" method="POST" -->
-        <label>First name</label>
+        <label>First name :</label>
         <input type="text" required />
 
-        <label>Last name</label>
+        <label>Last name :</label>
         <input type="text" required />
 
         <label>Email :</label>
