@@ -32,19 +32,6 @@ label {
   padding: 5px 20px;
 }
 
-.input-icon {
-  position: relative;
-  left: -240px;
-  color: #777;
-  z-index: 2;
-}
-
-.input-wrapper {
-
-}
-
-/*modifier les zones de texte */
-
 input,
 textarea {
   font-family: Helvetica, Arial, sans-serif;
