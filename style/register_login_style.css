@@ -29,13 +29,20 @@ label {
   padding: 5px 20px;
 }
 
+.input-icon {
+  position: relative;
+  left: -240px;
+  color: #777;
+  z-index: 2;
+}
+
+
 /*modifier les zones de texte */
 input,
 textarea {
   width: 45%;
   box-sizing: border-box;
-  padding: 12px;
-  border: 2px solid #cccccc;
+  padding: 12px 12px 12px 44px;  border: 2px solid #cccccc;
   border-radius: 8px;
   font-size: 16px;
   background-color: #ffffff;
