@@ -11,26 +11,34 @@
 }
 
 .modal-content {
-  background-color: #fff;
+  background-color: transparent;
   margin: 10% auto;
-  padding: 20px;
-  width: 50%;
-  border-radius: 8px;
-  position: relative;
+  color: white;
 }
 
 .close {
-  color: #aaa;
   position: absolute;
-  top: 10px;
-  right: 15px;
-  font-size: 28px;
+  top: 19%;
+  right: 28%; 
+  color: #aaa;
+  font-size: 20px;
   font-weight: bold;
   cursor: pointer;
+  border-radius: 50%;
+  border: 3px solid #aaa;
+  width: 25px;
+  height: 25px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(8px);
+  z-index: 1001;
 }
 
 .close:hover {
   color: #D42D26;
+  border:3px solid #D42D26;   
 }
 
 .subtitle {
@@ -55,10 +63,10 @@
 
 label {
   font-weight: bold;
-  display: inline-block;
-  width: 200px;
-  text-align: left;
-  padding: 5px 20px;
+  display: block;
+  text-align: center; 
+  margin: 10px auto;
+  width: auto;
 }
 
 input,
@@ -70,7 +78,7 @@ textarea {
     border: 1px solid rgba(255, 255, 255, 0.3);
     border-radius: 12px;
     font-size: 16px;
-    background-color: #f3f3f3;
+    background-color: #cecdcd;
     cursor: text;
     backdrop-filter: blur(10px) saturate(120%);
     -webkit-backdrop-filter: blur(10px) saturate(120%);
@@ -94,15 +102,6 @@ textarea:focus {
   width: 10vw;
 }
 
-#submit-reg {
-  font-family: inherit;
-  color: inherit;
-  margin-left: 13vw;
-}
-
-#submit-reg:hover {
-  color: white;
-}
 
 #ue-code, #ue-name, #ue-description {
   color: #231F1F;
@@ -122,7 +121,6 @@ textarea:focus {
 }
 
 #modal-submit {
-    margin-left: 100px;
     color: #423E3E;
     background-color: #D6D6D6;
 }
@@ -133,26 +131,76 @@ textarea:focus {
 }
 
 #modal-title {
-    margin-left: 50px;
     font-size: 30px;
+    text-align: center;
+}
+
+.ue-list-container {
+  margin: 0 auto;
+  margin-top: 3vh;
+  padding: 1em;
+  border-radius: 20px;
+  width: 90%;
+  transition: background-color 0.2s ease, color 0.2s ease;
+  text-align: center;
+  backdrop-filter: blur(10px) saturate(120%);
+  -webkit-backdrop-filter: blur(10px) saturate(120%);
 }
 
 .ue-list-container table {
-  width: 90%;
-  margin: 2rem auto;
-  border-collapse: collapse;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  border-radius: 10px;
+  width: 100%;
+  margin: -1rem;
+  border-collapse: separate;
+  border-spacing: 0;
 }
 
 .ue-list-container th,
 .ue-list-container td {
   padding: 15px 20px;
   text-align: left;
-  border-bottom: 1px solid #ddd;
 }
 
 .ue-list-container th {
   background-color: #f5f5f5;
   font-weight: bold;
+  color: #423E3E;
+  border-radius: 8px 8px 0 0;
+  backdrop-filter: blur(10px) saturate(120%);
+  -webkit-backdrop-filter: blur(10px) saturate(120%);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  box-shadow:
+    0 4px 6px rgba(0, 0, 0, 0.05),
+    0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+/* Style for row separators */
+.ue-list-container tr:not(:last-child) td:not(:last-child) {
+  border-bottom: 1px solid #e0e0e0;
+}
+
+/* Style for the last column (Settings) - no border */
+.ue-list-container td:last-child {
+  border-bottom: none;
+}
+
+.ue-list-container tr:hover {
+  background-color: rgba(255, 255, 255, 0.05);
+}
+
+.ue-list-container th:last-child {
+  visibility: hidden;
+  border: none !important;
+  background-color: transparent;
+  box-shadow: none;
+}
+
+/* Add some spacing between rows */
+.ue-list-container tr {
+  height: 60px;
+}
+
+/* Style for the Add UE button container */
+.ue-list-container tr:last-child td {
+  border-bottom: none;
+  padding-top: 15px;
 }

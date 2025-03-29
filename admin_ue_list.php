@@ -65,11 +65,11 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
             <div class="form-container">
                 <form class="reg-log-form" action="?" method="POST"> <!-- action="x.php" method="POST" -->
                     <input type="hidden" id="ue-index" name="ue_index">
-                    <label>UE Code:</label>
+                    <label>UE Code</label>
                     <input type="text" id="ue-code" name="ue_code">
-                    <label>UE Name:</label>
+                    <label>UE Name</label>
                     <input type="text" id="ue-name" name="ue_name">
-                    <label>UE Description:</label>
+                    <label>UE Description</label>
                     <textarea id="ue-description" name="ue_description"></textarea>
                     <button type="submit" id="modal-submit" class="buttonlink">Update</button>
                 </form>
