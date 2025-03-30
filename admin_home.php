@@ -4,7 +4,7 @@ include("PageParts/header.php");
 ?>
 
 <!--BODY-->
-<h3 class="subtitle">Hey, admin.</h3>
+<h3 class="subtitle">Hey, Doe.</h3>
 <div class="button-container">
     <div class="button-desc">
         <a href="admin_ue_list.php" class="buttonlink prof-stud-button">UE</a>
@@ -14,7 +14,7 @@ include("PageParts/header.php");
         </p>
     </div>
     <div class="button-desc">
-        <a href="placeholder.php" class="buttonlink prof-stud-button">Users</a>
+        <a href="admin_manage_users.php" class="buttonlink prof-stud-button">Users</a>
         <br />
         <p class="description"> <!-- à changer -->
             Manage users.
