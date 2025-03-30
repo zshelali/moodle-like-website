@@ -4,7 +4,7 @@ include("PageParts/header.php");
 ?>
 
 <!--BODY-->
-<h3 class="subtitle">You are a...</h3>
+<h3 class="subtitle">Placeholder page.</h3>
 <div class="button-container">
     <div class="button-desc">
         <a href="professor.php" class="buttonlink prof-stud-button"
@@ -12,16 +12,14 @@ include("PageParts/header.php");
         >
         <br />
         <p class="description"> <!-- à changer -->
-            Interact with your students, grade their work and keep track of their
-            evolution in an interactive way to keep your students interested.
+            Quick access to professor.php for debugging.
         </p>
     </div>
     <div class="button-desc">
         <a href="student.php" class="buttonlink prof-stud-button">Student</a>
         <br />
         <p class="description"> <!-- à changer -->
-            Check your grades, upload your work and projects, interact with your
-            mates and get many rewards as you progress.
+            Quick access to student.php for debugging.
         </p>
     </div>
 </div>

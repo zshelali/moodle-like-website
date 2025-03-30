@@ -117,12 +117,6 @@ nav {
   transform: scale(1.1); /* slightly bigger */
 }
 
-.startnow {
-  margin: 50px auto;
-  margin-left: 80px;
-  width: 200px;
-  font-size: 30px;
-}
 
 .back-button {
   width: 80px;

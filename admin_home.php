@@ -10,14 +10,14 @@ include("PageParts/header.php");
         <a href="admin_ue_list.php" class="buttonlink prof-stud-button">UE</a>
         <br />
         <p class="description"> <!-- à changer -->
-            Manage UEs.
+            See and edit the list of currently existing UEs, add new ones and assign students and professors to them.
         </p>
     </div>
     <div class="button-desc">
         <a href="admin_manage_users.php" class="buttonlink prof-stud-button">Users</a>
         <br />
         <p class="description"> <!-- à changer -->
-            Manage users.
+            See the list of currently registered users, change their name or email address and add new ones.
         </p>
     </div>
 </div>
