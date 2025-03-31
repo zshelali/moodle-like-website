@@ -1,0 +1,91 @@
+.Actuality_container_text {
+    margin: 30px 100px;
+    align-self:center;
+    border:2px solid skyblue;
+    border-radius: 15px;
+    padding:5px;
+}
+
+.Actuality_container_file {
+    margin: 30px 100px;
+    align-self:center;
+    border:2px solid orangered;
+    border-radius: 15px;
+    padding:5px;
+}
+
+.UE_name {
+    margin-left: 40px;
+    padding: 10px;
+    font-weight: bold;
+    margin-bottom:100px;
+}
+
+.Actuality_title {
+    float: left;
+    font-size: 30px;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.Actuality_icon {
+    float: left;
+    padding-right: 10px;
+}
+
+.text_paragraph {
+    text-align: justify;
+    padding-top: 40px;
+    padding-left: 60px;
+    padding-right: 60px;
+    white-space:pre-line;
+}
+
+.Actuality_time {
+    float: right;
+    padding-right: 10px;
+}
+
+.Actuality_options {
+    float: right;
+    font-size:20px;
+    padding-right: 10px;
+    color:black;
+}
+
+.Actuality_options:hover {
+    font-size:23px;
+    color:darkorange;
+}
+
+.File_box {
+    padding-top:15px;
+    display:flex;
+}
+
+.File_icon {
+    padding-left:100px;
+    float:left;
+
+
+}
+
+.File_text {
+    text-decoration-line: underline;
+    padding-top:45px;
+    padding-left: 30px;
+    float:left;
+}
+.File_text:hover {
+    font-size:102%;
+}
+
+.File_text:active {
+    font-size:102%;
+    color: #f89a97;
+}
+
+
+
+
+
