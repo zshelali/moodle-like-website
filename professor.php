@@ -15,7 +15,7 @@ include("PageParts/header.php");
        voit son amie d'enfance Feika (Foufa) qu'elle retrouve par
         hasard, désormais mariée à un riche homme d'affaires (Taïeb). 
     </p>
-    <a class="buttonlink startnow" href="./register.php">Start Now</a>
+
 
 </div>
 
