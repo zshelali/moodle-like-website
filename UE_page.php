@@ -13,6 +13,10 @@ include("PageParts/header.php");
                 WE4A : Technologies et programmation WEB
             </h1>
         </div>
+        <a href="UE_prof.php">
+            <img class="add-post" src="https://img.icons8.com/?size=50&id=11255&format=png">
+        </a>
+
 
         <div class="Actuality_container_text">
                 <img class="Actuality_icon" width="30" height="30" src="https://img.icons8.com/android/24/speech-bubble.png"

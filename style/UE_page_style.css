@@ -85,7 +85,21 @@
     color: #f89a97;
 }
 
+.formGroup {
+    margin-top: 10px;
+}
+.add-post {
+    position: absolute;
+    top: 200px;
+    right: 100px;
+    width: 50px;
+    height: auto;
+    z-index: 10;
+}
 
-
+.add-post:hover{
+    transform: scale(1.1);
+    cursor: pointer;
+}
 
 
