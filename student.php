@@ -4,41 +4,33 @@ include("PageParts/header.php");
 ?>
 
 <!--BODY-->
-<h3 class="subtitle">Hello, John.</h3>
+    <div class="content-wrapper">
+        <!-- Matières existantes -->
+        <div class="ueGrid">
+            <div class="ueBox"><h4>IT41</h4><img src="images/it41_gpt.png"></div>
+            <div class="ueBox"><h4>IT44</h4><img src="images/it44_gpt.png"></div>
+            <div class="ueBox"><h4>WE4A</h4><img src="images/WE4A_gpt.png"></div>
+            <div class="ueBox"><h4>LC00</h4><img src="images/lc00_gpt.png"></div>
+            <div class="ueBox"><h4>SO04</h4><img src="images/so04_gpt.png"></div>
+            <div class="ueBox"><h4>SI40</h4><img src="images/it41_gpt.png"></div>
+        </div>
 
-<div class="ueGrid">
+        <!-- Séparation -->
+        <div class="separator"></div>
 
-    <div class="ueGridBox1 ueBox">
-        <h4>IT41</h4>
-        <img src="images/it41_gpt.png">
+        <!-- Publications récentes -->
+        <div class="recent-posts">
+            <div class="recent-posts-header">
+                <h2>Publications récentes</h2>
+            </div>
+            <div id="posts-container">
+                <div>
+                    <!-- Ici seront affichés les posts récents -->
+                    <p> Ici seront affichés les posts récents</p>
+                </div>
+            </div>
+        </div>
     </div>
-
-    <div class="ueGridBox2 ueBox">
-        <h4>IT44</h4>
-        <img src="images/it44_gpt.png">
-    </div>
-
-    <div class="ueGridBox3 ueBox">
-        <h4>WE4A</h4>
-        <img src="images/WE4A_gpt.png">
-    </div>
-
-    <div class="ueGridBox4 ueBox">
-        <h4>LC00</h4>
-        <img src="images/lc00_gpt.png">
-    </div>
-
-    <div class="ueGridBox5 ueBox">
-        <h4>SO04</h4>
-        <img src="images/so04_gpt.png">
-    </div>
-
-    <div class="ueGridBox6 ueBox">
-        <h4>SI40</h4>
-        <img src="images/it41_gpt.png">
-    </div>
-</div>
-
 <!--BODY END-->
 
 <?php
