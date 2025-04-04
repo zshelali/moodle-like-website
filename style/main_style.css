@@ -34,7 +34,9 @@ nav {
 .description {
   text-align: center;
   display: block;
-  margin-top: 3vh;
+  margin-top: 25px;
+  min-height: 100px;
+  width: 180px;
 }
 
 .title-container {
