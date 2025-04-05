@@ -20,9 +20,16 @@ include("PageParts/header.php");
             See the list of currently registered users, change their name or email address and add new ones.
         </p>
     </div>
+    <div class="button-desc">
+        <a href="ue_user_management.php" class="buttonlink admin-menu-button">Assign</a>
+        <br />
+        <p class="description">
+            Assign users to UEs.
+        </p>
+    </div>
 </div>
 
-<?php 
+<?php
 include("PageParts/footer.php");
 ?>
 

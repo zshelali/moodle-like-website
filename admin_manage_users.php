@@ -43,6 +43,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
             <th>Last name</th>
             <th>Email</th>
             <th>Profile picture</th>
+            <th>Assigned UEs</th>
             <th> </th>
         </tr>
         <tr>
@@ -52,6 +53,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
             <td>Doe</td>
             <td>john.doe@skooli.com</td>
             <td><img class="pfp" src="images/default_pfp.png" alt="default_pfp"></td>
+            <td>IT41</td>
             <td><button class="buttonlink edit-btn">Manage user</button></td>
         </tr>
         <tr>
@@ -61,6 +63,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
             <td>Michel</td>
             <td>jeanmichel492@coldmail.uk</td>
             <td><img class="pfp" src="images/default_pfp.png" alt="default_pfp"></td>
+            <td>WE4A,SI40</td>
             <td><button class="buttonlink edit-btn">Manage user</button></td>
         </tr>
         <tr>
@@ -113,6 +116,19 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                     </div>
 
 
+                </div>
+
+                <div class="multiselect-container">
+                    <div class="ue-search-container">
+                        <input type="text" id="ueSearchInput" placeholder="Search for UEs...">
+                    </div>
+                    <div class="selected-tags" id="tagBox"></div>
+                    <div class="dropdown" id="dropdown">
+                        <div data-value="IT41">IT41</div>
+                        <div data-value="WE4A">WE4A</div>
+                        <div data-value="SI40">SI40</div>
+                    </div>
+                    <input type="hidden" name="selectedValues" id="selectedValues">
                 </div>
 
                 <button type="submit" id="modal-submit" class="buttonlink">Update</button>

@@ -122,3 +122,102 @@ $(document).ready(() => {
   });
 });
 
+
+
+
+// DROPDOWN MENU
+
+$(document).ready(function () {
+  const tagBox = $('#tagBox');
+  const dropdown = $('#dropdown');
+  const hiddenInput = $('#selectedValues');
+  const ueSearchInput = $('#ueSearchInput');
+  let selected = [];
+  let allOptions = [];
+  
+  // Store all dropdown options initially
+  dropdown.find('div').each(function() {
+    allOptions.push({
+      value: $(this).data('value'),
+      element: $(this).clone(true)
+    });
+  });
+  
+  tagBox.on('click', function () {
+    dropdown.toggle();
+  });
+  
+  // UE search functionality
+  ueSearchInput.on('keyup', function() {
+    const searchValue = $(this).val().toLowerCase();
+    
+    // Clear dropdown
+    dropdown.empty();
+    
+    // Filter and add matching options
+    allOptions.forEach(function(option) {
+      // Skip if already selected
+      if (selected.includes(option.value)) {
+        return;
+      }
+      
+      if (option.value.toLowerCase().includes(searchValue)) {
+        dropdown.append(option.element.clone(true));
+      }
+    });
+    
+    // Show dropdown when searching
+    if (searchValue.length > 0) {
+      dropdown.show();
+    }
+  });
+  
+  // Prevent tagBox click event when clicking in search input
+  ueSearchInput.on('click', function(e) {
+    dropdown.show();
+    e.stopPropagation();
+  });
+  
+  dropdown.on('click', 'div', function () {
+    const value = $(this).data('value');
+
+    if (!selected.includes(value)) {
+      selected.push(value);
+
+      // Add tag
+      const tag = $(`<span class="tag" data-value="${value}">${value}<span class="remove">&times;</span></span>`);
+      
+      // Tag removal handler
+      tag.find('.remove').on('click', function (e) {
+        e.stopPropagation(); // Prevent opening dropdown when removing tag
+        const tagValue = $(this).parent().data('value');
+        $(this).parent().remove();
+        selected = selected.filter(v => v !== tagValue);
+        hiddenInput.val(selected.join(','));
+        
+        // Find and add back the option from allOptions
+        const option = allOptions.find(o => o.value === tagValue);
+        if (option) {
+          dropdown.append(option.element.clone(true));
+        }
+      });
+
+      tagBox.append(tag);
+      hiddenInput.val(selected.join(','));
+
+      // Remove from dropdown
+      $(this).remove();
+    }
+
+    dropdown.hide();
+    ueSearchInput.val(''); // Clear search input after selection
+  });
+
+  // Hide dropdown when clicking outside
+  $(document).on('click', function (e) {
+    if (!$(e.target).closest('.multiselect-container').length) {
+      dropdown.hide();
+      ueSearchInput.val(''); // Clear search when closing
+    }
+  });
+});
