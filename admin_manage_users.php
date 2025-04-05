@@ -85,13 +85,13 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                 <input type="hidden" id="user-index" name="user_index">
 
                 <label for="user-firstname">First name</label>
-                <input type="text" id="user-first-name" name="user_first_name">
+                <input type="text" id="user-first-name" name="user_first_name" required>
 
                 <label for="user-last-name">Last name</label>
-                <input type="text" id="user-last-name" name="user_last_name">
+                <input type="text" id="user-last-name" name="user_last_name" required>
 
                 <label for="user-email">Email</label>
-                <input type="email" id="user-email" name="user_email">
+                <input type="email" id="user-email" name="user_email" required>
 
                 <label>Assign a role</label>
                 <button type="button" id="clear-btn" class="buttonlink">Clear choice</button>
