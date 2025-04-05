@@ -19,13 +19,22 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 ?>
 
 <!--BODY-->
+
+<!-- 
+                ⛔️⚠️⛔️⚠️⛔️⚠️
+                EXTREMELY IMPORTANT : WHEN ADDING OR EDITING A ROLE ALWAYS USE THE FOLLOWING SYNTAX :
+                 "Admin,Professor" OR "Student" OR "Professor" OR "Admin" 
+                 in order for the javascript to work properly in retrieving the role
+                 and inserting it in the modal's radio buttons.
+                 ⛔️⚠️⛔️⚠️⛔️⚠️
+-->
+
 <h3 class="subtitle">Registered users.</h3>
 <div class="user-list-container">
-    <!-- Search input -->
     <div class="search-container">
         <input type="text" id="userSearchInput" placeholder="Search for users by name, email, or role.">
     </div>
-    
+
     <table id="user-table">
         <tr>
             <th>ID</th>

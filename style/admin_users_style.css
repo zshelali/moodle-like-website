@@ -160,12 +160,10 @@ textarea:focus {
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05), 0 1px 3px rgba(0, 0, 0, 0.1);
 }
 
-/* Style for row separators */
 .user-list-container tr:not(:last-child) td:not(:last-child) {
   border-bottom: 1px solid #e0e0e0;
 }
 
-/* Style for the last column (Settings) - no border */
 .user-list-container td:last-child {
   border-bottom: none;
 }
@@ -181,7 +179,6 @@ textarea:focus {
   box-shadow: none;
 }
 
-/* Add some spacing between rows */
 .user-list-container tr {
   height: 60px;
 }
@@ -221,7 +218,6 @@ textarea:focus {
   flex-wrap: wrap;
 }
 
-/* Add search container styles */
 .search-container {
   margin-bottom: 15px;
   width: 100%;
@@ -234,7 +230,7 @@ textarea:focus {
   border-radius: 20px;
   border: 1px solid rgba(255, 255, 255, 0.3);
   background-color: #cecdcd;
-  color: #231F1F;
+  color: #231f1f;
   font-size: 14px;
   backdrop-filter: blur(10px) saturate(120%);
   -webkit-backdrop-filter: blur(10px) saturate(120%);

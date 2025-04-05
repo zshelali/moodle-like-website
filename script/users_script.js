@@ -78,15 +78,12 @@ document.addEventListener("DOMContentLoaded", () => {
     }
   };
 
-  // Search bar - FIXED VERSION
+  // Search bar 
   const userSearchInput = document.getElementById("userSearchInput");
   if (userSearchInput) {
-    userSearchInput.addEventListener("keyup", function() {
+    userSearchInput.addEventListener("keyup", function () {
       const value = this.value.toLowerCase();
-      // Make sure we're selecting the right table and excluding the header row and add button row
       const tableRows = document.querySelectorAll("#user-table tr");
-      
-      // Start from index 1 to skip the header row
       for (let i = 1; i < tableRows.length - 1; i++) {
         const row = tableRows[i];
         const text = row.textContent.toLowerCase();
