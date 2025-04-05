@@ -18,6 +18,14 @@ include("PageParts/header.php");
 </div>
 
 
+<div class="testing-menu">
+    <h3>
+        Testing menu
+    </h3>
+    <a href="student.php" class="buttonlink">student.php</a>
+    <a href="professor.php" class="buttonlink">professor.php</a>
+</div>
+
 <?php
 include("PageParts/footer.php");
 ?>

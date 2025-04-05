@@ -81,16 +81,22 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
                 <label>Assign a role</label>
                 <button type="button" id="clear-btn" class="buttonlink">Clear choice</button>
-                <div id="radio-select-container" name="">
+                <div id="radio-select-container">
 
-                    <label for="select-role-prof">Professor</label><br>
-                    <input type="radio" id="select-role-prof" name="select_role" value="Professor">
+                    <div class="role-option">
+                        <label for="select-role-prof">Professor</label>
+                        <input type="radio" id="select-role-prof" name="select_role" value="Professor" class="radio-button">
+                    </div>
 
-                    <label for="select-role-student">Student</label>
-                    <input type="radio" id="select-role-student" name="select_role" value="Student">
+                    <div class="role-option">
+                        <label for="select-role-student">Student</label>
+                        <input type="radio" id="select-role-student" name="select_role" value="Student" class="radio-button">
+                    </div>
 
-                    <label for="is-admin">Admin</label>
-                    <input type="checkbox" id="is-admin" value="Admin" name="select_role">
+                    <div class="role-option">
+                        <label for="is-admin">Admin</label>
+                        <input type="checkbox" id="is-admin" value="Admin" name="select_role" class="radio-button">
+                    </div>
 
 
                 </div>
