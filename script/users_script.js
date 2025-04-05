@@ -77,28 +77,25 @@ document.addEventListener("DOMContentLoaded", () => {
       modal.style.display = "none";
     }
   };
-});
 
-// clear button & ensures student and admin can't be checked at the same time (just trying a bit of jquery 😎)
-
-$(document).ready(() => {
-  $("#select-role-student, #select-role-prof").on("change", () => {
-    if ($("#select-role-student").is(":checked")) {
-      $("#is-admin").prop("disabled", true);
-      $("input[id=is-admin]").prop("checked", false);
-    }
-    else {
-      $("#is-admin").prop("disabled", false);
-    }
-  });
-
-  // clear button
-  $("#clear-btn").on("click", () => {
-    $("input[name=select_role]").prop("checked", false);
-  });
-
-  // clear when clicked on add button 
-  $(".add-btn").on("click", () => {
-    $("input[name=select_role]").prop("checked", false);
-  });
+  // Search bar - FIXED VERSION
+  const userSearchInput = document.getElementById("userSearchInput");
+  if (userSearchInput) {
+    userSearchInput.addEventListener("keyup", function() {
+      const value = this.value.toLowerCase();
+      // Make sure we're selecting the right table and excluding the header row and add button row
+      const tableRows = document.querySelectorAll("#user-table tr");
+      
+      // Start from index 1 to skip the header row
+      for (let i = 1; i < tableRows.length - 1; i++) {
+        const row = tableRows[i];
+        const text = row.textContent.toLowerCase();
+        if (text.indexOf(value) > -1) {
+          row.style.display = "";
+        } else {
+          row.style.display = "none";
+        }
+      }
+    });
+  }
 });

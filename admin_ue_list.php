@@ -21,7 +21,12 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 <!--BODY-->
 <h3 class="subtitle">Current UEs</h3>
 <div class="ue-list-container">
-    <table>
+    <!-- Search input -->
+    <div class="search-container">
+        <input type="text" id="ueSearchInput" placeholder="Search for UE code, name, description or credits.">
+    </div>
+    
+    <table id="ueTable">
         <tr>
             <th>UE Code</th>
             <th>UE Name</th>
@@ -33,7 +38,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
             <td>WE4A</td>
             <td>Technologies et programmation WEB</td>
             <td>Maîtriser les technologies Web permettant de créer des sites Web modernes</td>
-            <td>6 ECTS</td>
+            <td>3 ECTS</td>
             <td><button class="buttonlink edit-btn">Settings</button></td>
         </tr>
         <tr>
@@ -56,11 +61,6 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
             </td>
         </tr>
     </table>
-
-    <!-- Modal -->
-   
-
-
 </div>
 
 <div id="editModal" class="modal">

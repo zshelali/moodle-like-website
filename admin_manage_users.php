@@ -21,6 +21,11 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 <!--BODY-->
 <h3 class="subtitle">Registered users.</h3>
 <div class="user-list-container">
+    <!-- Search input -->
+    <div class="search-container">
+        <input type="text" id="userSearchInput" placeholder="Search for users by name, email, or role.">
+    </div>
+    
     <table id="user-table">
         <tr>
             <th>ID</th>
