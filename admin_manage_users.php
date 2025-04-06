@@ -65,7 +65,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
             <td>
                 <div class="man-del-btn-container">
                     <button class="buttonlink edit-btn"> <img src="images/edit.png" alt="edit" class="edit-img"></button>
-                    <button class="buttonlink del-btn"><img src="images/delete.png" alt="delete" class="delete-img"></button>
+                    <button onclick="delete_row()" class="buttonlink del-btn"><img src="images/delete.png" alt="delete" class="delete-img"></button>
                 </div>
             </td>
         </tr>
@@ -81,7 +81,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
             <td>
                 <div class="man-del-btn-container">
                     <button class="buttonlink edit-btn"> <img src="images/edit.png" alt="edit" class="edit-img"></button>
-                    <button class="buttonlink del-btn"><img src="images/delete.png" alt="delete" class="delete-img"></button>
+                    <button onclick="delete_row()" class="buttonlink del-btn"><img src="images/delete.png" alt="delete" class="delete-img"></button>
                 </div>
             </td>
         </tr>

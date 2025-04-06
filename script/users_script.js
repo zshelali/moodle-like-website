@@ -1,4 +1,10 @@
 // For USER settings
+function delete_row() {
+  confirm("Are you sure you want to delete this row ?");
+}
+
+
+
 document.addEventListener("DOMContentLoaded", () => {
   const modal = document.getElementById("editModal");
   const closeBtn = document.querySelector(".close");
