@@ -13,7 +13,7 @@ include("PageParts/header.php");
                 WE4A : Technologies et programmation WEB
             </h1>
         </div>
-        <a href="UE_prof.php">
+        <a href="AddPost.php">
             <img class="add-post" src="https://img.icons8.com/?size=50&id=11255&format=png">
         </a>
 
