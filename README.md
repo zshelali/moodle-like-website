@@ -1,4 +1,4 @@
-# ✅ Moodle Simplifié – Cahier des Charges (WE4A)
+# Moodle Simplifié – Cahier des Charges (WE4A)
 
 ## I. Technologies à utiliser
 
