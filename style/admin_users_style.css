@@ -100,9 +100,35 @@ textarea:focus {
     inset 0 1px 2px rgba(0, 0, 0, 0.1);
 }
 
+.man-del-btn-container {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+}
+
+.edit-btn,
+.del-btn {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+}
+
+.edit-img,
+.delete-img {
+  height: 16px;
+  width: 16px;
+}
+
+.user-controls {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+}
+
 .add-btn {
   font-size: 15px;
   width: 138px;
+  margin-bottom: 30px;
 }
 
 #modal-submit {
@@ -288,7 +314,7 @@ textarea:focus {
   opacity: 0.7;
 }
 
-.selected-tags {
+/* .selected-tags {
   display: flex;
   flex-wrap: wrap;
   border: 1px solid rgba(255, 255, 255, 0.3);
@@ -375,4 +401,4 @@ textarea:focus {
 .dropdown div:hover {
   background-color: #d6d6d6;
   transform: translateX(2px);
-}
+} */

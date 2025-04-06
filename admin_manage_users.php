@@ -31,9 +31,15 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
 <h3 class="subtitle">Registered users.</h3>
 <div class="user-list-container">
-    <div class="search-container">
-        <input type="text" id="userSearchInput" placeholder="Search for users by name, email, or role.">
+    <div class="user-controls">
+
+        <div class="search-container">
+            <input type="text" id="userSearchInput" placeholder="Search for users by name, email, or role.">
+        </div>
+
+        <button class="buttonlink add-btn">Add a new user</button>
     </div>
+
 
     <table id="user-table">
         <tr>
@@ -42,6 +48,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
             <th>First name</th>
             <th>Last name</th>
             <th>Email</th>
+            <th>Encrypted Password</th>
             <th>Profile picture</th>
             <th>Assigned UEs</th>
             <th> </th>
@@ -52,9 +59,15 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
             <td>John</td>
             <td>Doe</td>
             <td>john.doe@skooli.com</td>
+            <td>29fh29if92f82j</td>
             <td><img class="pfp" src="images/default_pfp.png" alt="default_pfp"></td>
             <td>IT41</td>
-            <td><button class="buttonlink edit-btn">Manage user</button></td>
+            <td>
+                <div class="man-del-btn-container">
+                    <button class="buttonlink edit-btn"> <img src="images/edit.png" alt="edit" class="edit-img"></button>
+                    <button class="buttonlink del-btn"><img src="images/delete.png" alt="delete" class="delete-img"></button>
+                </div>
+            </td>
         </tr>
         <tr>
             <td>2</td>
@@ -62,13 +75,14 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
             <td>Jean</td>
             <td>Michel</td>
             <td>jeanmichel492@coldmail.uk</td>
+            <td>0928jnfd2nf38h</td>
             <td><img class="pfp" src="images/default_pfp.png" alt="default_pfp"></td>
             <td>WE4A,SI40</td>
-            <td><button class="buttonlink edit-btn">Manage user</button></td>
-        </tr>
-        <tr>
             <td>
-                <button class="buttonlink add-btn">Add a new user</button>
+                <div class="man-del-btn-container">
+                    <button class="buttonlink edit-btn"> <img src="images/edit.png" alt="edit" class="edit-img"></button>
+                    <button class="buttonlink del-btn"><img src="images/delete.png" alt="delete" class="delete-img"></button>
+                </div>
             </td>
         </tr>
     </table>
@@ -118,7 +132,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
                 </div>
 
-                <div class="multiselect-container">
+                <!-- <div class="multiselect-container">
                     <div class="ue-search-container">
                         <input type="text" id="ueSearchInput" placeholder="Search for UEs...">
                     </div>
@@ -129,7 +143,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                         <div data-value="SI40">SI40</div>
                     </div>
                     <input type="hidden" name="selectedValues" id="selectedValues">
-                </div>
+                </div> -->
 
                 <button type="submit" id="modal-submit" class="buttonlink">Update</button>
             </form>
