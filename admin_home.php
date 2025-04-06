@@ -1,33 +1,27 @@
 <?php
 $styles = ['index_style'];
+$scripts = ['index_home_script'];
 include("PageParts/header.php");
 ?>
 
 <!--BODY-->
-<h3 class="subtitle">Hey, Doe.</h3>
-<div class="button-container-admin">
-    <div class="button-desc">
-        <a href="admin_ue_list.php" class="buttonlink admin-menu-button">UE</a>
-        <br />
-        <p class="description"> <!-- à changer -->
-            See and edit the list of currently existing UEs, add new ones and assign students and professors to them.
-        </p>
+<div id="tabs">
+    <ul>
+        <li><a href="#tabs-1">UE list</a></li>
+        <li><a href="#tabs-2">Admin list</a></li>
+    </ul>
+    <div id="tabs-1">
+        <?php
+        include("PageParts/admin_ue_list.php")
+        ?>
     </div>
-    <div class="button-desc">
-        <a href="admin_manage_users.php" class="buttonlink admin-menu-button">Users</a>
-        <br />
-        <p class="description"> <!-- à changer -->
-            See the list of currently registered users, change their name or email address and add new ones.
-        </p>
-    </div>
-    <div class="button-desc">
-        <a href="ue_user_management.php" class="buttonlink admin-menu-button">Assign</a>
-        <br />
-        <p class="description">
-            Assign users to UEs.
-        </p>
+    <div id="tabs-2">
+    <?php
+        include("PageParts/admin_manage_users.php")
+        ?>
     </div>
 </div>
+
 
 <?php
 include("PageParts/footer.php");

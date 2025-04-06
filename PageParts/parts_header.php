@@ -25,12 +25,6 @@
             echo '<script src="script/' . $script . '.js"></script>' . "\n";
         }
     }
-
-    // back
-    $currentPage = basename($_SERVER['PHP_SELF']);
-    if ($currentPage !== 'index.php') {
-        echo '<a href="javascript:history.back()" class="back-button buttonlink">← Back</a>';
-    }
     ?>
 
     <!-- <link rel="stylesheet" href="style/professor_page_style.css" />
@@ -42,21 +36,6 @@
 </head>
 
 <body>
-<div class="title-container">
-    <h1>
-        <a href="index.php" id="maintitle" class=link-hover>Skooli<span class="dotcom">.com</span></a>
-    </h1>
-    <div class="logo-container">
-        <a href="https://utbm.fr">
-            <img src="https://upload.wikimedia.org/wikipedia/fr/b/be/Utbm.svg" alt="logo" id="utbm-logo">
-        </a>
-    </div>
-</div>
-<br />
-<nav id="reg-log-nav">
-    <a href="login.php" class="buttonlink">Sign in</a>
-    <a href="admin_home.php" class="buttonlink">Admin zone</a>
-</nav>
-<br />
+
 
 <!--BODY-->

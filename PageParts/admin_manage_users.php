@@ -1,7 +1,7 @@
 <?php
 $styles = ['admin_users_style'];
 $scripts = ['users_script'];
-include("PageParts/header.php");
+include("PageParts/parts_header.php");
 
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     $id = $_POST['user_id'];
