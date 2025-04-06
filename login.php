@@ -1,5 +1,6 @@
 <?php
 $styles = ['register_login_style'];
+$scripts = ['login_script'];
 include("PageParts/header.php");
 ?>
 
@@ -12,6 +13,9 @@ include("PageParts/header.php");
 
         <label for="login-password">Password :</label>
         <input id="login-password" type="password" required />
+
+        <label for="show-password">Show password :</label>
+        <input id="show-password" type="checkbox" onclick="toggleShowPassword()">
 
         <button type="submit" class="buttonlink submit-reg">Sign in</button>
     </form>
