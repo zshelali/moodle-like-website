@@ -3,10 +3,10 @@
 ## I. Technologies à utiliser
 
 - [ ] Symfony 7
-- [ ] Apache + MySQL (XAMPP ou équivalent)
-- [ ] Aucune autre librairie que :
+- [x] Apache + MySQL (XAMPP ou équivalent)
+- [x] Aucune autre librairie que :
   - [ ] Bootstrap
-  - [ ] JQuery
+  - [x] JQuery
 - [ ] Migrations Symfony fonctionnelles
 - [ ] Fichier SQL d’exemple généré via phpMyAdmin
 
@@ -15,53 +15,57 @@
 ## II. Rôles à gérer
 
 ### Admin
-- [ ] Accès zone admin
-- [ ] Création UE + assignation
-- [ ] Création comptes (rôles + mot de passe)
-- [ ] Redirection prof/admin selon rôle
-- [ ] Pas d’accès UE sauf si aussi prof
+- [x] Accès zone admin
+- [x] Création comptes 
+- [ ] Ajouter MDP
+- [x] Pas de register
+- [x] Gestion Prof / admin OU admin / étudiant PAS admin
+- [ ] Page par défaut pour Prof-admin / admin / prof
+- [ ] (NTH) : Admins peuvent modifier UE + notification pour le prof
 
 ### Étudiant
-- [ ] Page accueil = choix UE
-- [ ] Voir messages texte + fichiers
-- [ ] Télécharger fichiers
+- [x] Page accueil = choix UE
+- [ ] Voir messages texte 
+- [x] Télécharger fichiers déposés par les profs
 
 ### Professeur
-- [ ] Page accueil = choix UE
+- [x] Page accueil = choix UE (pareil que étudiant)
 - [ ] Voir/Créer/Modifier/Supprimer posts
-- [ ] Interface formulaire séparée (minimum)
-- [ ] (Nice) Interface AJAX dynamique
+- [ ] Interface formulaire séparée pour modifier contenu UE (minimum)
+- [ ] (NTH) Interface AJAX dynamique
 
 ---
 
 ## III. Pages indispensables
 
 ### Login
-- [ ] Formulaire de login
+- [x] Formulaire de login
 - [ ] Redirection obligatoire si non connecté
 - [ ] JS : Montrer/cacher mot de passe
-- [ ] JS : Refuser envoi si champ vide
-- [ ] (Nice) Statistiques, UI enrichie
+- [x] JS : Refuser envoi si champ vide
+- [ ] (NTH) Statistiques, UI enrichie
 
 ### Admin – Catalogue
-- [ ] Onglets Users / UEs
-- [ ] Bouton Créer User / UE
-- [ ] Modifier / Supprimer chaque entrée
-- [ ] JS : Changement d’onglet
-- [ ] JS+AJAX : Suppression + confirmation popup
+- [ ] Page avec tous les users / UE (onglets JQuery)
+- [ ] Mettre bouton ADD en haut du tableau
+- [ ] Ajouter bouton effacer avec alert confirmation
 
 ### Création/Modification User
-- [ ] Nom, prénom, email, rôle, mot de passe, UE assignées
-- [ ] Sélection dynamique UE (JS)
+- [x] Nom, prénom, email, rôle, 
+- [ ] Mot de passe
+- [ ] UE assignées
+- [ ] MDP par défaut pour une création
+- [ ] Inteface assignation UE / user (VOIR SUJET)
 - [ ] (Nice) Création UE rapide sans quitter
 
 ### Création/Modification UE
-- [ ] Code, intitulé, image
+- [x] Code, intitulé, image
+- [ ] Remplacer description par image
 - [ ] (Nice) Gestion utilisateurs associés (recherche AJAX)
 
 ### Choix UE (étudiant/prof)
-- [ ] Affichage imagé des UE
-- [ ] Fil d’actualité (activité récente)
+- [x] Affichage imagé des UE
+- [x] Fil d’actualité (activité récente)
 - [ ] (Nice) Bouton AJAX "charger plus"
 
 ### Page contenu UE
