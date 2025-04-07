@@ -35,7 +35,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
             <th>UE Code</th>
             <th>UE Name</th>
             <th>UE Description</th>
-            <th>Credits</th>
+            <th>ECTS credits</th>
             <th>Illustration</th>
             <th> </th>
         </tr>
@@ -43,8 +43,8 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
             <td>WE4A</td>
             <td>Technologies et programmation WEB</td>
             <td>Maîtriser les technologies Web permettant de créer des sites Web modernes</td>
-            <td>3 ECTS</td>
-            <td>i1</td>
+            <td>3</td>
+            <td><img class="ue-list-img" src="images/we4a_gpt.png" alt="illustration1"></td>
             <td>
                 <div class="man-del-btn-container">
                     <button class="buttonlink edit-btn"> <img src="images/edit.png" alt="edit" class="edit-img"></button>
@@ -56,8 +56,8 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
             <td>IT41</td>
             <td>Classical and Quantum Algorithms</td>
             <td>Aborder du point de vue des mathématiques la notion d'algorithme en étudiant/comparant le calcul classique et le calcul quantique.</td>
-            <td>6 ECTS</td>
-            <td>i2</td>
+            <td>6</td>
+            <td><img class="ue-list-img" src="images/it41_gpt.png" alt="illustration2"></td>
             <td>
                 <div class="man-del-btn-container">
                     <button class="buttonlink edit-btn"> <img src="images/edit.png" alt="edit" class="edit-img"></button>
@@ -69,8 +69,8 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
             <td>SI40</td>
             <td>Systèmes d'information</td>
             <td>Mettre en œuvre des outils de conception de systèmes d¿information permettant la mise en application des méthodes associées</td>
-            <td>6 ECTS</td>
-            <td>i3</td>
+            <td>6</td>
+            <td><img class="ue-list-img" id="ue-list-img" src="images/si40_gpt.png" alt="illustration3"></td>
             <td>
                 <div class="man-del-btn-container">
                     <button class="buttonlink edit-btn"> <img src="images/edit.png" alt="edit" class="edit-img"></button>
@@ -87,13 +87,22 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         <h3 id="ue-modal-title">UE settings</h3>
         <div class="form-container">
             <form class="reg-log-form" action="?" method="POST"> <!-- action="x.php" method="POST" -->
-                <input type="hidden" id="ue-index" name="ue_index">
+
                 <label for="ue-code">UE Code</label>
-                <input type="text" id="ue-code" name="ue_code">
+                <input type="text" id="ue-code" name="ue_code" required>
+
                 <label for="ue-name">UE Name</label>
-                <input type="text" id="ue-name" name="ue_name">
+                <input type="text" id="ue-name" name="ue_name" required>
+
                 <label for="ue-description">UE Description</label>
-                <textarea id="ue-description" name="ue_description"></textarea>
+                <textarea type="text" id="ue-description" name="ue_description"></textarea>
+
+                <label for="ue-credits">Credits</label>
+                <input type="number" id="ue-credits" name="ue_credits" required>
+
+                <label for="ue-input-illustration">Upload an illustration</label>
+                <input type="file" id="ue-input-illustration" name="ue_input_illustration">
+
                 <button type="submit" id="ue-modal-submit" class="buttonlink">Update</button>
             </form>
         </div>

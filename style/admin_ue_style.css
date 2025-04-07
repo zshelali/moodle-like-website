@@ -121,6 +121,12 @@ textarea:focus {
   height: 30vh;
 }
 
+.ue-list-img {
+  height: 64px;
+  width: 64px;
+  border-radius: 8px;
+}
+
 #modal-submit {
   color: #423e3e;
   background-color: #d6d6d6;
@@ -154,9 +160,10 @@ textarea:focus {
 }
 
 #ue-modal-submit {
-  color: #423e3e;
-  background-color: #d6d6d6;
+  display: block;
+  margin: 20px auto ;
 }
+
 
 .ue-list-container {
   margin: 0 auto;
