@@ -3,30 +3,31 @@ function delete_row() {
   confirm("Are you sure you want to delete this row ?");
 }
 
-
-
 document.addEventListener("DOMContentLoaded", () => {
-  const modal = document.getElementById("editModal");
-  const closeBtn = document.querySelector(".close");
+  const userTab = document.querySelector(".user-tab");
+  if (!userTab) return; // Ensure this script only runs in the user tab
+
+  const modal = userTab.querySelector("#userEditModal");
+  const closeBtn = modal.querySelector(".close");
   var roles = [];
   var roleString = "";
   var counter = 0;
 
-  // editing a user 
-  $('.edit-btn').each(function () {
-    $(this).on("click", function () {
-      const row = $(this).closest("tr");
-      const cells = row.find("td");
+  // editing a user
+  userTab.querySelectorAll(".edit-btn").forEach((btn) => {
+    btn.addEventListener("click", () => {
+      const row = btn.closest("tr");
+      const cells = row.querySelectorAll("td");
 
-      document.getElementById("user-first-name").value = cells.eq(2).text().trim();
-      document.getElementById("user-last-name").value = cells.eq(3).text().trim();
-      document.getElementById("user-email").value = cells.eq(4).text().trim();
+      document.getElementById("user-first-name").value = cells[2].textContent.trim();
+      document.getElementById("user-last-name").value = cells[3].textContent.trim();
+      document.getElementById("user-email").value = cells[4].textContent.trim();
 
-      // reset and extract role 
+      // reset and extract role
       roles = [];
       roleString = "";
       counter = 0;
-      const roleText = cells.eq(1).text().trim();
+      const roleText = cells[1].textContent.trim();
 
       for (const char of roleText) {
         roleString += char;
@@ -40,34 +41,34 @@ document.addEventListener("DOMContentLoaded", () => {
       for (const role of roles) {
         switch (role) {
           case "Professor":
-            $('#select-role-prof').prop('checked', true);
+            userTab.querySelector("#select-role-prof").checked = true;
             break;
           case "Student":
-            $('#select-role-student').prop('checked', true);
+            userTab.querySelector("#select-role-student").checked = true;
             break;
           case "Admin":
-            $('#is-admin').prop('checked', true);
+            userTab.querySelector("#is-admin").checked = true;
             break;
           default:
-            console.log("No role could be read.")
+            console.log("No role could be read.");
         }
       }
 
-      document.getElementById("modal-title").textContent = "Edit user";
-      document.getElementById("modal-submit").textContent = "Confirm update";
+      userTab.querySelector("#user-modal-title").textContent = "Edit user";
+      userTab.querySelector("#user-modal-submit").textContent = "Confirm update";
       modal.style.display = "block";
     });
   });
 
   // adding a user modal
-  const addBtn = document.querySelector(".add-btn");
+  const addBtn = userTab.querySelector(".add-btn");
   if (addBtn) {
     addBtn.addEventListener("click", () => {
-      document.getElementById("user-first-name").value = "";
-      document.getElementById("user-last-name").value = "";
-      document.getElementById("user-email").value = "";
-      document.getElementById("modal-title").textContent = "Add a new user";
-      document.getElementById("modal-submit").textContent = "Add user";
+      userTab.querySelector("#user-first-name").value = "";
+      userTab.querySelector("#user-last-name").value = "";
+      userTab.querySelector("#user-email").value = "";
+      userTab.querySelector("#user-modal-title").textContent = "Add a new user";
+      userTab.querySelector("#user-modal-submit").textContent = "Add user";
       modal.style.display = "block";
     });
   }
@@ -84,20 +85,16 @@ document.addEventListener("DOMContentLoaded", () => {
     }
   };
 
-  // Search bar 
-  const userSearchInput = document.getElementById("userSearchInput");
+  // Search bar
+  const userSearchInput = userTab.querySelector("#userSearchInput");
   if (userSearchInput) {
     userSearchInput.addEventListener("keyup", function () {
       const value = this.value.toLowerCase();
-      const tableRows = document.querySelectorAll("#user-table tr");
+      const tableRows = userTab.querySelectorAll("#user-table tr");
       for (let i = 1; i < tableRows.length; i++) {
         const row = tableRows[i];
         const text = row.textContent.toLowerCase();
-        if (text.indexOf(value) > -1) {
-          row.style.display = "";
-        } else {
-          row.style.display = "none";
-        }
+        row.style.display = text.includes(value) ? "" : "none";
       }
     });
   }

@@ -93,10 +93,10 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
 </div>
 
-<div id="editModal" class="modal">
+<div id="userEditModal" class="modal">
     <div class="modal-content">
         <span class="close">&times;</span>
-        <h3 id="modal-title"></h3>
+        <h3 id="user-modal-title"></h3>
         <div class="form-container">
             <form class="reg-log-form" action="?" method="POST"> <!-- action="x.php" method="POST" -->
                 <input type="hidden" id="user-index" name="user_index">
@@ -145,7 +145,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                     <input type="hidden" name="selectedValues" id="selectedValues">
                 </div> -->
 
-                <button type="submit" id="modal-submit" class="buttonlink">Update</button>
+                <button type="submit" id="user-modal-submit" class="buttonlink">Update</button>
             </form>
         </div>
     </div>
