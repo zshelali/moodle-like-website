@@ -3,12 +3,14 @@
 
 <?php
 $styles = ['UE_page_style'];
+$scripts = ['menu'];
 include("PageParts/header.php");
 ?>
 
 
     <body>
-        <div class="UE_name">
+
+    <div class="UE_name">
             <h1>
                 WE4A : Technologies et programmation WEB
             </h1>
@@ -28,7 +30,13 @@ include("PageParts/header.php");
                      alt="double-exclamation-mark-emoji"/>
                 <img class="Actuality_icon" title="Information" width="30" height="30" src="https://img.icons8.com/fluency/30/information.png" alt="information"/>
 
-                <a class="Actuality_options" href="#">&#8285;</a> <!-- Lien vers la page pour modifier un post. N'est afficher que si l'utilisateur est un professeur-->
+            <div class="Actuality_menu">
+                <a class="Actuality_options">&#8285;</a>
+                <div class="dropdown-menu">
+                    <a href="UE_prof_modif.php">Modifier</a>
+                    <a href="#" class="delete-post">Supprimer</a>
+                </div>
+            </div>
                 <time class="Actuality_time" datetime="2025-0
                 3-31T13:49:57">13h49 le 31 Mars</time>
 
@@ -44,33 +52,58 @@ include("PageParts/header.php");
 
         <hr/>
 
-        <div class="Actuality_container_file">
+    <div class="Actuality_container_file">
 
-                <img class="Actuality_icon" width="30" height="30" src="https://img.icons8.com/android/24/speech-bubble.png"
-                     alt="speech-bubble"/>
-                <h3 class="Actuality_title">Lorem Ipsum</h3>
+        <img class="Actuality_icon" width="30" height="30" src="https://img.icons8.com/android/24/speech-bubble.png"
+             alt="speech-bubble"/>
+        <h3 class="Actuality_title">Lorem Ipsum</h3>
 
 
 
-                <a class="Actuality_options" href="#">&#8285;</a> <!-- Lien vers la page pour modifier un post. N'est afficher que si l'utilisateur est un professeur-->
-                <time class="Actuality_time" datetime="2025-0
+        <div class="Actuality_menu">
+            <a class="Actuality_options">&#8285;</a>
+            <div class="dropdown-menu">
+                <a href="UE_prof_modif.php">Modifier</a>
+                <a href="#" class="delete-post">Supprimer</a>
+            </div>
+        </div>
+        <time class="Actuality_time" datetime="2025-0
                 3-31T13:49:57">13h49 le 31 Mars</time>
 
-                <br>
-                <p class="text_paragraph"> Le descriptif d'un ficher ou une explication de pourquoi il y a le fichier </p>
+        <br>
+        <p class="text_paragraph"> Le descriptif d'un ficher ou une explication de pourquoi il y a le fichier </p>
 
-                <div class="File_box">
-                    <img class="File_icon" width="100" height="100" src="https://img.icons8.com/plasticine/100/file.png" alt="file"/>
-                    <a class="File_text" href="/index.php" download="index">Fichier à télécharger</a>
-                </div>
-
-
-
-
-
-
-
+        <div class="File_box">
+            <img class="File_icon" width="100" height="100" src="https://img.icons8.com/plasticine/100/file.png" alt="file"/>
+            <a class="File_text" href="/index.php" download="index">Fichier à télécharger</a>
         </div>
+
+    </div>
+
+
+
+    <!-- Script js pour le menu -->
+    <script>
+        document.querySelectorAll('.Actuality_options').forEach(button => {
+            button.addEventListener('click', function (e) {
+                e.preventDefault();
+                const menu = this.nextElementSibling;
+                const isVisible = menu.style.display === 'block';
+
+                // Ferme tous les autres menus
+                document.querySelectorAll('.dropdown-menu').forEach(m => m.style.display = 'none');
+
+                // Toggle du menu actuel
+                menu.style.display = isVisible ? 'none' : 'block';
+            });
+        });
+
+        document.addEventListener('click', function (e) {
+            if (!e.target.closest('.Actuality_menu')) {
+                document.querySelectorAll('.dropdown-menu').forEach(m => m.style.display = 'none');
+            }
+        });
+    </script>
     </body>
 </html>
 
