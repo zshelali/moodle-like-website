@@ -8,7 +8,7 @@ include("PageParts/header.php");
 <div id="tabs">
     <ul>
         <li><a href="#tabs-1">UE list</a></li>
-        <li><a href="#tabs-2">Admin list</a></li>
+        <li><a href="#tabs-2">User list</a></li>
     </ul>
     <div id="tabs-1">
         <?php
