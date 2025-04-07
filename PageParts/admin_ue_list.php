@@ -24,7 +24,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     <div class="user-controls">
 
         <div class="search-container">
-            <input type="text" id="ueSearchInput" placeholder="Search for UEs by code, name or description.">
+            <input type="text" id="ueSearchInput" placeholder="Search for UEs by code, name or description. (BETA)">
         </div>
 
         <button class="buttonlink add-btn">Add a new UE</button>
@@ -45,7 +45,12 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
             <td>Maîtriser les technologies Web permettant de créer des sites Web modernes</td>
             <td>3 ECTS</td>
             <td>i1</td>
-            <td><button class="buttonlink edit-btn">Settings</button></td>
+            <td>
+                <div class="man-del-btn-container">
+                    <button class="buttonlink edit-btn"> <img src="images/edit.png" alt="edit" class="edit-img"></button>
+                    <button onclick="deleteUERow()()" class="buttonlink del-btn"><img src="images/delete.png" alt="delete" class="delete-img"></button>
+                </div>
+            </td>
         </tr>
         <tr>
             <td>IT41</td>
@@ -53,7 +58,12 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
             <td>Aborder du point de vue des mathématiques la notion d'algorithme en étudiant/comparant le calcul classique et le calcul quantique.</td>
             <td>6 ECTS</td>
             <td>i2</td>
-            <td><button class="buttonlink edit-btn">Settings</button></td>
+            <td>
+                <div class="man-del-btn-container">
+                    <button class="buttonlink edit-btn"> <img src="images/edit.png" alt="edit" class="edit-img"></button>
+                    <button onclick="deleteUERow()" class="buttonlink del-btn"><img src="images/delete.png" alt="delete" class="delete-img"></button>
+                </div>
+            </td>
         </tr>
         <tr>
             <td>SI40</td>
@@ -61,7 +71,12 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
             <td>Mettre en œuvre des outils de conception de systèmes d¿information permettant la mise en application des méthodes associées</td>
             <td>6 ECTS</td>
             <td>i3</td>
-            <td><button class="buttonlink edit-btn">Settings</button></td>
+            <td>
+                <div class="man-del-btn-container">
+                    <button class="buttonlink edit-btn"> <img src="images/edit.png" alt="edit" class="edit-img"></button>
+                    <button onclick="deleteUERow()()" class="buttonlink del-btn"><img src="images/delete.png" alt="delete" class="delete-img"></button>
+                </div>
+            </td>
         </tr>
     </table>
 </div>

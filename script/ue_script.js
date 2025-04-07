@@ -1,3 +1,7 @@
+function deleteUERow(){
+  confirm("Are you sure you want to delete this UE ? \n(Will do nothing here, waiting for backend)");
+}
+
 document.addEventListener("DOMContentLoaded", () => {
   const ueTab = document.querySelector(".ue-tab");
   if (!ueTab) return; // Ensure this script only runs in the UE tab

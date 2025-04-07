@@ -1,6 +1,17 @@
 // For USER settings
-function delete_row() {
-  confirm("Are you sure you want to delete this row ?");
+const CHARACTERS = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890-_";
+const RANDOM_PASSWORD_LENGTH = 15;
+
+function generateRandomPassword(length) {
+  let result = ' ';
+  for (let i = 0; i<length; i++){
+    result += CHARACTERS.charAt(Math.floor(Math.random()* CHARACTERS.length))
+  }
+  return result;
+}
+
+function deleteUserRow() {
+  confirm("Are you sure you want to delete this user ? \n(Will do nothing here, waiting for backend)");
 }
 
 document.addEventListener("DOMContentLoaded", () => {
@@ -22,8 +33,9 @@ document.addEventListener("DOMContentLoaded", () => {
       document.getElementById("user-first-name").value = cells[2].textContent.trim();
       document.getElementById("user-last-name").value = cells[3].textContent.trim();
       document.getElementById("user-email").value = cells[4].textContent.trim();
+      document.getElementById("user-password").value = cells[5].textContent.trim();
 
-      // reset and extract role
+      // --- reset and extract role ---
       roles = [];
       roleString = "";
       counter = 0;
@@ -60,13 +72,14 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   });
 
-  // adding a user modal
+  // --- adding a user ---
   const addBtn = userTab.querySelector(".add-btn");
   if (addBtn) {
     addBtn.addEventListener("click", () => {
       userTab.querySelector("#user-first-name").value = "";
       userTab.querySelector("#user-last-name").value = "";
       userTab.querySelector("#user-email").value = "";
+      userTab.querySelector("#user-password").value = generateRandomPassword(RANDOM_PASSWORD_LENGTH);
       userTab.querySelector("#user-modal-title").textContent = "Add a new user";
       userTab.querySelector("#user-modal-submit").textContent = "Add user";
       modal.style.display = "block";
@@ -124,7 +137,6 @@ $(document).ready(() => {
     $("input[name=select_role]").prop("checked", false);
   });
 });
-
 
 
 
