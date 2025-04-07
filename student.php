@@ -4,15 +4,51 @@ include("PageParts/header.php");
 ?>
 
 <!--BODY-->
-    <div class="content-wrapper">
-        <!-- Matières existantes -->
-        <div class="ueGrid">
-            <div class="ueBox"><h4>IT41</h4><img src="images/it41_gpt.png"></div>
-            <div class="ueBox"><h4>IT44</h4><img src="images/it44_gpt.png"></div>
-            <div class="ueBox"><h4>WE4A</h4><img src="images/WE4A_gpt.png"></div>
-            <div class="ueBox"><h4>LC00</h4><img src="images/lc00_gpt.png"></div>
-            <div class="ueBox"><h4>SO04</h4><img src="images/so04_gpt.png"></div>
-            <div class="ueBox"><h4>SI40</h4><img src="images/it41_gpt.png"></div>
+<h3 class="subtitle">Hello, John.</h3>
+<div class="content-wrapper">
+    <!-- Matières existantes -->
+    <div class="ueGrid">
+
+        <div class="ueGridBox1 ueBox">
+            <a href="UE_page.php">
+                <h4>IT41</h4>
+                <img src="images/it41_gpt.png">
+            </a>
+        </div>
+
+        <div class="ueGridBox2 ueBox">
+            <a href="UE_page.php">
+                <h4>IT44</h4>
+                <img src="images/it44_gpt.png">
+            </a>
+        </div>
+
+        <div class="ueGridBox3 ueBox">
+            <a href="UE_page.php">
+                <h4>WE4A</h4>
+                <img src="images/WE4A_gpt.png">
+            </a>
+        </div>
+
+        <div class="ueGridBox4 ueBox">
+            <a href="UE_page.php">
+                <h4>LC00</h4>
+                <img src="images/lc00_gpt.png">
+            </a>
+        </div>
+
+        <div class="ueGridBox5 ueBox">
+            <a href="UE_page.php">
+                <h4>SO04</h4>
+                <img src="images/so04_gpt.png">
+            </a>
+        </div>
+
+        <div class="ueGridBox6 ueBox">
+            <a href="UE_page.php">
+                <h4>SI40</h4>
+                <img src="images/si40_gpt.png">
+            </a>
         </div>
 
         <!-- Séparation -->
@@ -31,8 +67,8 @@ include("PageParts/header.php");
             </div>
         </div>
     </div>
-<!--BODY END-->
+    <!--BODY END-->
 
-<?php
-include("PageParts/footer.php");
-?>
+    <?php
+    include("PageParts/footer.php");
+    ?>

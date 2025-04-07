@@ -42,4 +42,22 @@ document.addEventListener("DOMContentLoaded", () => {
       modal.style.display = "none";
     }
   };
+  
+  // Search bar
+  const ueSearchInput = document.getElementById("ueSearchInput");
+  if (ueSearchInput) {
+    ueSearchInput.addEventListener("keyup", function() {
+      const value = this.value.toLowerCase();
+      const tableRows = document.querySelectorAll("#ueTable tr:not(:first-child):not(:last-child)");
+      
+      tableRows.forEach(row => {
+        const text = row.textContent.toLowerCase();
+        if (text.indexOf(value) > -1) {
+          row.style.display = "";
+        } else {
+          row.style.display = "none";
+        }
+      });
+    });
+  }
 });
