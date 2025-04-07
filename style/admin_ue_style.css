@@ -227,18 +227,17 @@ textarea:focus {
 }
 
 .search-container {
-  margin-bottom: 15px;
+  margin-bottom: 8px;
   width: 100%;
-  position: sticky;
 }
 
 #ueSearchInput {
-  width: 500px;
-  padding: 10px 15px;
-  border-radius: 20px;
+  width: 100%;
+  padding: 8px 12px;
+  border-radius: 12px;
   border: 1px solid rgba(255, 255, 255, 0.3);
   background-color: #cecdcd;
-  color: #231F1F;
+  color: #231f1f;
   font-size: 14px;
   backdrop-filter: blur(10px) saturate(120%);
   -webkit-backdrop-filter: blur(10px) saturate(120%);
@@ -257,3 +256,4 @@ textarea:focus {
   color: #666;
   opacity: 0.7;
 }
+

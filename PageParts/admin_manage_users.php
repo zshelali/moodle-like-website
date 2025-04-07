@@ -34,7 +34,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     <div class="user-controls">
 
         <div class="search-container">
-            <input type="text" id="userSearchInput" placeholder="Search for users by name, email, or role.">
+            <input type="text" id="userSearchInput" placeholder="Search for users by name, email, or role. (BETA)">
         </div>
 
         <button class="buttonlink add-btn">Add a new user</button>
@@ -65,7 +65,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
             <td>
                 <div class="man-del-btn-container">
                     <button class="buttonlink edit-btn"> <img src="images/edit.png" alt="edit" class="edit-img"></button>
-                    <button onclick="delete_row()" class="buttonlink del-btn"><img src="images/delete.png" alt="delete" class="delete-img"></button>
+                    <button onclick="deleteUserRow()()" class="buttonlink del-btn"><img src="images/delete.png" alt="delete" class="delete-img"></button>
                 </div>
             </td>
         </tr>
@@ -81,7 +81,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
             <td>
                 <div class="man-del-btn-container">
                     <button class="buttonlink edit-btn"> <img src="images/edit.png" alt="edit" class="edit-img"></button>
-                    <button onclick="delete_row()" class="buttonlink del-btn"><img src="images/delete.png" alt="delete" class="delete-img"></button>
+                    <button onclick="deleteUserRow()()" class="buttonlink del-btn"><img src="images/delete.png" alt="delete" class="delete-img"></button>
                 </div>
             </td>
         </tr>
@@ -109,6 +109,9 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
                 <label for="user-email">Email</label>
                 <input type="email" id="user-email" name="user_email" required>
+
+                <label for="user-password">Password</label>
+                <input type="text" id="user-password" name="user_password" required>
 
                 <label>Assign a role</label>
                 <button type="button" id="clear-btn" class="buttonlink">Clear choice</button>
