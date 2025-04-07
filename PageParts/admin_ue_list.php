@@ -24,7 +24,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     <div class="user-controls">
 
         <div class="search-container">
-            <input type="text" id="userSearchInput" placeholder="Search for users by name, email, or role.">
+            <input type="text" id="ueSearchInput" placeholder="Search for UEs by code, name or description.">
         </div>
 
         <button class="buttonlink add-btn">Add a new UE</button>
@@ -66,10 +66,10 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     </table>
 </div>
 
-<div id="editModal" class="modal">
+<div id="ueEditModal" class="modal">
     <div class="modal-content">
         <span class="close">&times;</span>
-        <h3 id="modal-title">UE settings</h3>
+        <h3 id="ue-modal-title">UE settings</h3>
         <div class="form-container">
             <form class="reg-log-form" action="?" method="POST"> <!-- action="x.php" method="POST" -->
                 <input type="hidden" id="ue-index" name="ue_index">
@@ -79,7 +79,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                 <input type="text" id="ue-name" name="ue_name">
                 <label for="ue-description">UE Description</label>
                 <textarea id="ue-description" name="ue_description"></textarea>
-                <button type="submit" id="modal-submit" class="buttonlink">Update</button>
+                <button type="submit" id="ue-modal-submit" class="buttonlink">Update</button>
             </form>
         </div>
     </div>
