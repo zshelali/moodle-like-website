@@ -28,6 +28,7 @@ include("PageParts/header.php");
     </h3>
     <a href="student.php" class="buttonlink">student.php</a>
     <a href="professor.php" class="buttonlink">professor.php</a>
+    <a href="assignation_ue_user.php" class="buttonlink">assignation_ue_user.php (Prototype)</a>
 </div>
 
 <?php

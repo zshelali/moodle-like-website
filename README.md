@@ -17,7 +17,7 @@
 ### Admin
 - [x] Accès zone admin
 - [x] Création comptes 
-- [ ] Ajouter MDP
+- [x] Ajouter MDP
 - [x] Pas de register
 - [x] Gestion Prof / admin OU admin / étudiant PAS admin
 - [ ] Page par défaut pour Prof-admin / admin / prof
@@ -41,20 +41,20 @@
 ### Login
 - [x] Formulaire de login
 - [ ] Redirection obligatoire si non connecté
-- [ ] JS : Montrer/cacher mot de passe
+- [x] JS : Montrer/cacher mot de passe
 - [x] JS : Refuser envoi si champ vide
 - [ ] (NTH) Statistiques, UI enrichie
 
 ### Admin – Catalogue
-- [ ] Page avec tous les users / UE (onglets JQuery)
-- [ ] Mettre bouton ADD en haut du tableau
+- [x] Page avec tous les users / UE (onglets JQuery)
+- [x] Mettre bouton ADD en haut du tableau
 - [ ] Ajouter bouton effacer avec alert confirmation
 
 ### Création/Modification User
 - [x] Nom, prénom, email, rôle, 
-- [ ] Mot de passe
+- [x] Mot de passe
 - [ ] UE assignées
-- [ ] MDP par défaut pour une création
+- [x] MDP par défaut pour une création
 - [ ] Inteface assignation UE / user (VOIR SUJET)
 - [ ] (Nice) Création UE rapide sans quitter
 
