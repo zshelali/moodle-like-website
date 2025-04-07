@@ -2,7 +2,8 @@
 <html lang="fr">
 
 <?php
-$styles = ['UE_page_style'];
+$styles = ['UE_page_style', 'UE_prof'];
+$scripts = ['AddPost_script'];
 include("PageParts/header.php");
 ?>
 
@@ -13,8 +14,8 @@ include("PageParts/header.php");
                 WE4A : Technologies et programmation WEB
             </h1>
         </div>
-        <a href="AddPost.php">
-            <img class="add-post" src="https://img.icons8.com/?size=50&id=11255&format=png">
+        <a href="#" class="add-post-btn-link">
+            <img class="add-post-btn" src="https://img.icons8.com/?size=50&id=11255&format=png">
         </a>
 
 
@@ -64,14 +65,35 @@ include("PageParts/header.php");
                     <a class="File_text" href="/index.php" download="index">Fichier à télécharger</a>
                 </div>
 
-
-
-
-
-
-
         </div>
-    </body>
+
+        <a href="#" class="add-post-btn-link">
+            <img class="add-post-btn" src="https://img.icons8.com/?size=50&id=11255&format=png" alt="Add post">
+        </a>
+
+        <div id="addPostModal" class="modal">
+            <div class="modal-content">
+                <span class="close-post" onclick="closePostModal()">×</span>
+                <div class="post-form-box">
+                    <h2 id="modal-title">Add post</h2>
+                    <form id="addPostForm">
+                        <label for="postTitle">Title</label>
+                        <input type="text" id="postTitle" name="title" required />
+
+                        <label for="postContent">Content</label>
+                        <textarea id="postContent" name="content" rows="4" required></textarea>
+
+                        <div class="formGroup">
+                            <label for="file">Add file (optional) :</label>
+                            <input type="file" name="file" class="fileInput">
+                        </div>
+
+                        <button type="submit" id="modal-submit">Publier</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+
 </html>
 
 
