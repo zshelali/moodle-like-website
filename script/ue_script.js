@@ -31,7 +31,6 @@ document.addEventListener("DOMContentLoaded", () => {
       ueTab.querySelector("#ue-code").value = '';
       ueTab.querySelector("#ue-name").value = '';
       ueTab.querySelector("#ue-description").value = '';
-      ueTab.querySelector("#ue-index").value = -1;
       ueTab.querySelector("#ue-modal-title").textContent = "New UE";
       ueTab.querySelector("#ue-modal-submit").textContent = "Add";
       modal.style.display = "block";
