@@ -1,28 +1,28 @@
 <?php
 $styles = ['index_style'];
+$scripts = ['index_home_script'];
 include("PageParts/header.php");
 ?>
 
 <!--BODY-->
-<h3 class="subtitle">Welcome back, admin.</h3>
-<div class="button-container">
-    <div class="button-desc">
-        <a href="admin_ue_list.php" class="buttonlink prof-stud-button">UE</a>
-        <br />
-        <p class="description"> <!-- à changer -->
-            Manage UEs.
-        </p>
+<div id="tabs">
+    <ul>
+        <li><a href="#tabs-1">UE list</a></li>
+        <li><a href="#tabs-2">User list</a></li>
+    </ul>
+    <div id="tabs-1" class="ue-tab">
+        <?php
+        include("PageParts/admin_ue_list.php")
+        ?>
     </div>
-    <div class="button-desc">
-        <a href="placeholder.php" class="buttonlink prof-stud-button">Users</a>
-        <br />
-        <p class="description"> <!-- à changer -->
-            Manage users.
-        </p>
+    <div id="tabs-2" class="user-tab">
+    <?php
+        include("PageParts/admin_manage_users.php")
+        ?>
     </div>
 </div>
 
-<?php 
+<?php
 include("PageParts/footer.php");
 ?>
 

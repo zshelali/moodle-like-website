@@ -1,0 +1,6 @@
+{
+    "require": {
+        "symfony/asset": "^7.2",
+        "doctrine/orm": "^3.3"
+    }
+}

@@ -7,9 +7,11 @@
 
     <!--Common style to all pages (header, footer...) -->
     <link rel="stylesheet" href="style/main_style.css" />
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.14.1/themes/base/jquery-ui.css"> 
 
     <!-- JQuery -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
+    <script src="https://code.jquery.com/ui/1.14.1/jquery-ui.js"></script>
     <?php
     // Set the corresponding style for the right page
     if (isset($styles) && is_array($styles)) {
@@ -52,7 +54,7 @@
 </div>
 <br />
 <nav id="reg-log-nav">
-    <a href="login.php" class="buttonlink">Login</a>
+    <a href="login.php" class="buttonlink">Sign in</a>
     <a href="admin_home.php" class="buttonlink">Admin zone</a>
 </nav>
 <br />

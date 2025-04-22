@@ -1,0 +1,73 @@
+{% extends 'header.html.twig' %}
+
+
+
+{% block body %}
+    <body>
+    <div class="UE_name">
+        <h1>
+            {{ ueinfo.nom}} : {{ ueinfo.description}}
+        </h1>
+    </div>
+    </body>
+
+    {% for post in postlist %}
+        {% if post.type == "text" %}
+        <div class="Actuality_container_text">
+            <img class="Actuality_icon" width="30" height="30" src="https://img.icons8.com/android/24/speech-bubble.png"
+             alt="speech-bubble"/>
+            <h3 class="Actuality_title">{{ post.titre }}</h3>
+
+
+        {% if post.picto == "info" %}
+            <img class="Actuality_icon" title="Information" width="30" height="30" src="https://img.icons8.com/fluency/30/information.png" alt="information"/>
+        {% elseif post.picto == "important" %}
+            <img class="Actuality_icon" title="! Important !" width="30" height="30" src="https://img.icons8.com/emoji/30/double-exclamation-mark-emoji.png"
+             alt="double-exclamation-mark-emoji"/>
+        {% endif %}
+            <div class="Actuality_menu">
+                <a class="Actuality_options">&#8285;</a>
+                <div class="dropdown-menu">
+
+                    <a href="UE_prof_modif.php" ><!--A modifier pour rediriger vers la bonne page-->
+                         Modifier</a>
+                    <a href="#" class="delete-post">Supprimer</a>
+                </div>
+            </div>
+            <time class="Actuality_time" datetime="2025-0
+                    3-31T13:49:57">13h49 le 31 Mars</time>
+
+
+            <br>
+            <p class="text_paragraph">{{ post.contenu }}
+            </p>
+        {% elseif post.type == "file" %}
+            <div class="Actuality_container_file">
+
+                <img width="30" height="30" src="https://img.icons8.com/material-outlined/24/upload-to-cloud.png" alt="upload-to-cloud"/>
+                <h3 class="Actuality_title">{{ post.title }}</h3>
+                <div class="Actuality_menu">
+                    <a class="Actuality_options">&#8285;</a>
+                    <div class="dropdown-menu">
+                        <a href="UE_prof_modif.php"><!--A modifier pour rediriger vers la bonne page-->
+                            Modifier</a>
+                        <a href="#" class="delete-post">Supprimer</a>
+                    </div>
+                </div>
+                <time class="Actuality_time" datetime="2025-0
+                    3-31T13:49:57">13h49 le 31 Mars</time>
+
+                <br>
+                <p class="text_paragraph"> {{ post.contenu}} </p>
+
+                <div class="File_box">
+                    <img class="File_icon" width="100" height="100" src="https://img.icons8.com/plasticine/100/file.png" alt="file"/>
+                    <a class="File_text" href="/index.php" download="index">Fichier à télécharger</a>
+                </div>
+
+            </div>
+
+    </div>
+
+
+{% endblock %}
