@@ -1,26 +1,74 @@
 <?php
-$styles = ['professor_page_style'];
+$styles = ['student_home_style'];
 include("PageParts/header.php");
 ?>
 
-<h3 class="subtitle">Yo bro !</h3>
-<div id="summary-container">
+<!--BODY-->
+<h3 class="subtitle">Hello, John.</h3>
+<div class="content-wrapper">
+    <!-- Matières existantes -->
+    <div class="ueGrid">
 
-    <p id="summary-title">Here's a quick summary of what you can do as a <em>student</em> on Skooli<span class="dotcom">.com</span></p>
-    <br />
-    <p id="summary-desc">
-        Zeineb, la femme de Slimane, possède sa propre
-        boutique puis son centre et enfin sa pâtisserie. Elle est constamment
-        jalouse de Azza et de Dalenda (Daddou),
-        la secrétaire de Slimane
-        à partir du troisième épisode de la deuxième saison. Dans la série,
-        Daddou est sortie avec deux personnages,
-        Chekib et Wassim.
-    </p>
-    <a class="buttonlink startnow" href="./register.php">Start Now</a>
+        <div class="ueGridBox1 ueBox">
+            <a href="UE_page.php">
+                <h4>IT41</h4>
+                <img src="images/it41_gpt.png">
+            </a>
+        </div>
 
-</div>
+        <div class="ueGridBox2 ueBox">
+            <a href="UE_page.php">
+                <h4>IT44</h4>
+                <img src="images/it44_gpt.png">
+            </a>
+        </div>
 
-<?php 
-include("PageParts/footer.php");
-?>
+        <div class="ueGridBox3 ueBox">
+            <a href="UE_page.php">
+                <h4>WE4A</h4>
+                <img src="images/WE4A_gpt.png">
+            </a>
+        </div>
+
+        <div class="ueGridBox4 ueBox">
+            <a href="UE_page.php">
+                <h4>LC00</h4>
+                <img src="images/lc00_gpt.png">
+            </a>
+        </div>
+
+        <div class="ueGridBox5 ueBox">
+            <a href="UE_page.php">
+                <h4>SO04</h4>
+                <img src="images/so04_gpt.png">
+            </a>
+        </div>
+
+        <div class="ueGridBox6 ueBox">
+            <a href="UE_page.php">
+                <h4>SI40</h4>
+                <img src="images/si40_gpt.png">
+            </a>
+        </div>
+
+        <!-- Séparation -->
+        <div class="separator"></div>
+
+        <!-- Publications récentes -->
+        <div class="recent-posts">
+            <div class="recent-posts-header">
+                <h2>Publications récentes</h2>
+            </div>
+            <div id="posts-container">
+                <div>
+                    <!-- Ici seront affichés les posts récents -->
+                    <p> Ici seront affichés les posts récents</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--BODY END-->
+
+    <?php
+    include("PageParts/footer.php");
+    ?>

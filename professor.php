@@ -3,21 +3,40 @@ $styles = ['professor_page_style'];
 include("PageParts/header.php");
 ?>
 
-<h3 class="subtitle">Hey prof !</h3>
-<div id="summary-container">
+    <h3 class="subtitle">Hello, Sir.</h3>
 
-    <p id="summary-title">Here's a quick summary of what you can do as a <em>prof</em> on Skooli<span class="dotcom">.com</span></p>
-    <br />
-    <p id="summary-desc">
-    La mère de Zeineb, Douja, rend souvent visite à sa fille ;
-     elle est riche, moderne et fait tout pour paraître plus jeune.
-      Elle sort pendant un certain avec Houssi. Zeineb quant à elle
-       voit son amie d'enfance Feika (Foufa) qu'elle retrouve par
-        hasard, désormais mariée à un riche homme d'affaires (Taïeb). 
-    </p>
-    <a class="buttonlink startnow" href="./register.php">Start Now</a>
+    <div class="ueGrid">
+        <div class="ueGridBox1 ueBox">
+            <a href="UE_page.php" class="ueBoxLink">
+                <h4>IT41</h4>
+                <img src="images/it41_gpt.png">
+            </a>
+        </div>
 
-</div>
+        <div class="ueGridBox2 ueBox">
+            <a href="UE_page.php" class="ueBoxLink">
+                <h4>IT4A/B</h4>
+                <img src="images/it44_gpt.png">
+            </a>
+        </div>
+
+        <div class="ueGridBox3 ueBox">
+            <a href="UE_page.php" class="ueBoxLink">
+                <h4>WE4A</h4>
+                <img src="images/WE4A_gpt.png">
+            </a>
+        </div>
+
+        <div class="ueGridBox4 ueBox">
+            <a href="UE_page.php" class="ueBoxLink">
+                <h4>IA41</h4>
+                <img src="images/lc00_gpt.png">
+            </a>
+        </div>
+
+    </div>
+
+
 
 <?php 
 include("PageParts/footer.php");

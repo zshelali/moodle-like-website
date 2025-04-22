@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/.idea/UTBM-Skooli-LMS-website.iml" filepath="$PROJECT_DIR$/.idea/UTBM-Skooli-LMS-website.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/moodle-like-website.iml" filepath="$PROJECT_DIR$/.idea/moodle-like-website.iml" />
     </modules>
   </component>
 </project>
